@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unna Estética — Estética Avançada em Jardim Camburi, Vitória | Prévia de site</title>
+<meta name="description" content="Prévia de site para a Unna Estética, tratamentos estéticos faciais e corporais em Jardim Camburi, Vitória (ES).">
+<meta property="og:title" content="Unna Estética — O seu momento de cuidar de si">
+<meta property="og:description" content="Prévia de site criada para a Unna Estética, Jardim Camburi, Vitória (ES).">
+<meta property="og:image" content="img/pil-1.jpg">
+<meta name="theme-color" content="#f6ede7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/kit.css">
+<style>
+:root{--bg:#f6ede7;--fg:#3a251f;--accent:#5b3a2f;--on-accent:#fbf3ee;
+--cream2:#efe1d8;--rose:#d9aa9c;--rose2:#ecd3c8;--rose-d:#8c4f40;--sage:#55654f;--line:rgba(58,37,31,.2);
+--intro-bg:#f6ede7;--intro-fg:#3a251f;--intro-ls:.08em;
+--font-display:'Bodoni Moda','Playfair Display',Georgia,serif;--font-body:'Jost',system-ui,sans-serif}
+.lp-intro{--accent:var(--rose-d)}
+.wrap{width:min(1200px,calc(100% - 44px));margin-inline:auto}
+section{position:relative}
+.pad{padding:clamp(5rem,11vw,9rem) 0}
+h1,h2,h3{font-family:var(--font-display);font-weight:400}
+em{font-style:italic;color:var(--rose-d)}
+h2{font-size:clamp(2.3rem,5vw,4.2rem);line-height:1.06;letter-spacing:-.01em}
+.eb{display:inline-flex;align-items:center;gap:.9rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;font-size:.72rem;color:var(--sage);margin-bottom:1.3rem}
+.eb::before,.eb.c::after{content:"";width:30px;height:1px;background:currentColor}
+.lead{line-height:1.8;font-size:1.06rem;font-weight:300;max-width:50ch;color:rgba(58,37,31,.82)}
+.lp-btn{border-radius:999px;font-weight:500;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;padding:1.05rem 1.9rem;min-height:48px}
+.lp-btn:hover{box-shadow:0 16px 36px -14px rgba(58,37,31,.7)}
+.lnk{display:inline-flex;align-items:center;gap:.6rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;padding:.5rem 0;border-bottom:1px solid var(--rose-d);color:var(--fg);transition:gap .35s,color .3s}
+.lnk:hover{gap:1rem;color:var(--rose-d)}
+/* imagens */
+.zf{position:relative;overflow:hidden;background:var(--rose2)}
+.zf .zi{position:absolute;inset:0;transition:transform 1.4s cubic-bezier(.2,.8,.2,1)}
+.zf:hover .zi{transform:scale(1.04)}
+.zf img{object-fit:cover}
+.zf::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(217,170,156,.12),rgba(58,37,31,.14));pointer-events:none}
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:800;padding:1.1rem 0;transition:background .4s,padding .4s,box-shadow .4s}
+.nav.scrolled{background:rgba(246,237,231,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:.6rem 0;box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1rem}
+.nav ul{display:flex;gap:2rem;font-weight:400;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase}
+.nav ul a{padding:.4rem 0;border-bottom:1px solid transparent;transition:border-color .3s,color .3s}
+.nav ul a:hover{border-color:var(--rose-d);color:var(--rose-d)}
+.logo{text-align:center;line-height:1;display:flex;flex-direction:column;align-items:center}
+.logo b{font-family:var(--font-display);font-weight:400;font-style:italic;font-size:2rem;letter-spacing:.02em}
+.logo small{font-size:.58rem;letter-spacing:.5em;text-transform:uppercase;margin-top:.3rem;padding-left:.5em;color:var(--sage);font-weight:500}
+.nav .cta{justify-self:end}
+.nav .lp-btn{padding:.75rem 1.3rem;font-size:.74rem}
+@media(max-width:900px){.nav ul{display:none}.nav .wrap{grid-template-columns:1fr auto}.logo{align-items:flex-start;text-align:left}.logo b{font-size:1.7rem}.logo small{padding-left:0}}
+@media(max-width:380px){.nav .lp-btn{padding:.7rem 1rem;font-size:.7rem;letter-spacing:.1em}}
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:7.5rem 0 4rem;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(640px circle at 88% 18%,rgba(217,170,156,.38),transparent 62%),radial-gradient(520px circle at 4% 92%,rgba(127,143,120,.2),transparent 62%)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2.5rem,6vw,6rem);align-items:center}
+.hero h1{font-size:clamp(2.9rem,6.4vw,5.9rem);line-height:1.02;letter-spacing:-.02em}
+.hero .sub{margin-top:1.8rem;max-width:44ch;line-height:1.8;font-size:1.1rem;font-weight:300;color:rgba(58,37,31,.84)}
+.cta-row{display:flex;flex-wrap:wrap;gap:1.6rem;align-items:center;margin-top:2.4rem}
+.arch-wrap{position:relative;width:min(100%,500px);margin-inline:auto}
+.arch-wrap::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1px solid var(--rose);border-radius:999px 999px 0 0}
+.arch{position:relative;aspect-ratio:3/4;max-height:76vh;width:100%;border-radius:999px 999px 0 0}
+.arch img{position:absolute;inset:0;width:100%;height:100%;object-position:62% 45%}
+.badge{position:absolute;right:-1rem;bottom:2.4rem;width:128px;height:128px;border-radius:50%;background:var(--bg);box-shadow:0 18px 40px -16px rgba(58,37,31,.45);display:grid;place-items:center;z-index:2}
+.badge svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 28s linear infinite}
+.badge text{font:500 8.6px var(--font-body);letter-spacing:.1em;text-transform:uppercase;fill:var(--fg)}
+.badge i{font-family:var(--font-display);font-size:2rem;font-style:italic;color:var(--rose-d);line-height:1}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.badge svg{animation:none}}
+@media(max-width:900px){.hero{min-height:0;padding-top:6.5rem}.hero-grid{grid-template-columns:1fr}.arch{aspect-ratio:4/5;max-height:70vh}.badge{right:.2rem;width:104px;height:104px;bottom:1.4rem}.badge i{font-size:1.6rem}}
+/* faixa */
+.mq{background:var(--rose2);color:var(--fg);font-family:var(--font-display);font-style:italic;font-size:clamp(1.4rem,2.6vw,2rem);padding:.85rem 0}
+.mq .lp-marquee-dot{background:var(--rose-d);opacity:.7}
+/* statement */
+.stmt{text-align:center}
+.stmt h2{max-width:20ch;margin-inline:auto;font-size:clamp(2.2rem,5vw,4.4rem)}
+.stmt .lead{margin:1.6rem auto 0;text-align:center}
+.orn{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:2.4rem;color:var(--sage)}
+.orn::before,.orn::after{content:"";width:min(90px,18vw);height:1px;background:var(--sage);opacity:.6}
+/* tratamentos */
+.hd{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(1.5rem,5vw,4rem);align-items:end}
+.tr{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:3.4rem}
+.tc{display:flex;flex-direction:column;height:100%;padding:clamp(1.8rem,3vw,2.6rem);border:1px solid var(--line);background:rgba(255,255,255,.38);transition:transform .45s cubic-bezier(.2,.8,.2,1),background .4s,border-color .4s,box-shadow .4s}
+.tc:hover{transform:translateY(-5px);background:var(--rose2);border-color:var(--rose);box-shadow:0 22px 40px -28px rgba(58,37,31,.6)}
+.tc .top{display:flex;justify-content:space-between;align-items:flex-start;color:var(--sage)}
+.tc .nn{font-family:var(--font-display);font-style:italic;font-size:2.6rem;line-height:1;color:var(--rose-d)}
+.tc h3{font-size:clamp(1.7rem,2.6vw,2.2rem);line-height:1.1;margin:1.6rem 0 .7rem}
+.tc p{line-height:1.75;font-weight:300;color:rgba(58,37,31,.82);max-width:42ch}
+.tc .go{margin-top:1.6rem;display:inline-flex;align-items:center;gap:.6rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;color:var(--rose-d);transition:gap .35s}
+.tc:hover .go{gap:1rem}
+.note{margin-top:1.8rem;font-size:.86rem;font-weight:300;opacity:.8;font-style:italic}
+@media(max-width:900px){.hd{grid-template-columns:1fr}}
+@media(max-width:700px){.tr{grid-template-columns:1fr}}
+/* ritual */
+.rit{background:var(--cream2)}
+.rt{display:grid;grid-template-columns:5fr 6fr;gap:clamp(2.5rem,7vw,7rem);align-items:center}
+.rt-img{position:relative;width:100%}
+.rt-img::before{content:"";position:absolute;inset:auto -1.2rem -1.2rem auto;width:62%;height:56%;background:var(--rose);opacity:.55;z-index:0}
+.rt-img .zf{position:relative;z-index:1;aspect-ratio:4/5;border-radius:220px 220px 0 0}
+.rt-img img{position:absolute;left:0;width:100%;top:-10%;height:120%;object-position:55% 35%}
+.rs{margin-top:2.2rem}
+.rs li{display:grid;grid-template-columns:4.2rem 1fr;gap:1rem;padding:1.5rem 0;border-top:1px solid var(--line)}
+.rs li:last-child{border-bottom:1px solid var(--line)}
+.rs .nn{font-family:var(--font-display);font-style:italic;font-size:3rem;line-height:1;color:var(--rose-d)}
+.rs h3{font-size:1.6rem;line-height:1.1;margin-bottom:.4rem}
+.rs p{line-height:1.7;font-weight:300;color:rgba(58,37,31,.82)}
+.rit .lnk{margin-top:2rem}
+@media(max-width:900px){.rt{grid-template-columns:1fr}.rt-img{max-width:460px;margin-inline:auto}.rt-img::before{right:-.6rem}}
+/* diferenciais */
+.dfs{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:3.2rem}
+.dfi{height:100%;padding:2rem 1.5rem 2.2rem;border-top:1px solid var(--fg);background:transparent;transition:transform .45s cubic-bezier(.2,.8,.2,1),background .4s}
+.dfi:hover{transform:translateY(-6px);background:rgba(236,211,200,.55)}
+.dfi .ic{width:54px;height:54px;border-radius:50%;border:1px solid var(--sage);display:grid;place-items:center;color:var(--sage);margin-bottom:1.4rem;transition:background .35s,color .35s}
+.dfi:hover .ic{background:var(--sage);color:#fff}
+.dfi h3{font-size:1.5rem;line-height:1.15;margin-bottom:.6rem}
+.dfi p{line-height:1.7;font-weight:300;color:rgba(58,37,31,.82);font-size:.98rem}
+@media(max-width:1000px){.dfs{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.dfs{grid-template-columns:1fr}}
+/* depoimentos */
+.dep{background:var(--rose2)}
+.dep .c-head{text-align:center}
+.q{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3.2rem;align-items:start}
+.q > div:nth-child(2){margin-top:2.4rem}
+.qc{margin:0;padding:2.2rem 1.9rem;background:var(--bg);border-radius:140px 140px 6px 6px;padding-top:3.4rem;text-align:center;transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .4s}
+.qc:hover{transform:translateY(-5px);box-shadow:0 24px 44px -30px rgba(58,37,31,.7)}
+.qc .qm{font-family:var(--font-display);font-size:3.6rem;line-height:.5;color:var(--rose-d);display:block;height:1.6rem}
+.qc blockquote{margin:0;font-family:var(--font-display);font-style:italic;font-size:1.28rem;line-height:1.5}
+.qc figcaption{margin-top:1.4rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;font-size:.72rem;color:var(--sage)}
+.tag-il{text-align:center;margin-top:2.2rem;font-size:.84rem;font-style:italic;font-weight:300;opacity:.8}
+@media(max-width:900px){.q{grid-template-columns:1fr;max-width:520px;margin-inline:auto}.q > div:nth-child(2){margin-top:0}}
+/* final */
+.final{background:var(--fg);color:#f6ede7;text-align:center;overflow:hidden;--accent:#f6ede7;--on-accent:#3a251f}
+.final-bg{position:absolute;inset:0;background:radial-gradient(600px circle at 15% 20%,rgba(217,170,156,.22),transparent 60%),radial-gradient(520px circle at 90% 90%,rgba(127,143,120,.22),transparent 60%)}
+
+.final .wrap{position:relative}
+.final .eb{color:var(--rose)}
+.final h2{font-size:clamp(2.6rem,7vw,6rem);line-height:1.02;max-width:16ch;margin-inline:auto}
+.final h2 em{color:var(--rose)}
+.final p{margin:1.4rem auto 2.2rem;max-width:44ch;line-height:1.8;font-weight:300;font-size:1.08rem;color:rgba(246,237,231,.88)}
+.final .row{display:flex;flex-wrap:wrap;gap:1.4rem;justify-content:center;align-items:center}
+.final .lnk{color:#f6ede7;border-color:var(--rose)}
+.final .lnk:hover{color:var(--rose)}
+/* rodapé */
+footer{background:var(--cream2);padding:3.6rem 0 6rem;color:rgba(58,37,31,.86)}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1.2fr;gap:3rem}
+footer h4{font-family:var(--font-display);font-weight:400;font-style:italic;font-size:1.5rem;margin:0 0 1rem;color:var(--fg)}
+footer li{display:flex;gap:.7rem;margin-bottom:.8rem;line-height:1.6;font-weight:300}
+footer li svg{flex:none;color:var(--rose-d);margin-top:4px}
+footer a:hover{color:var(--rose-d);text-decoration:underline}
+footer .logo{align-items:flex-start;text-align:left;margin-bottom:1rem}
+footer .logo small{padding-left:0}
+.cp{margin-top:2.6rem;padding-top:1.4rem;border-top:1px solid var(--line);font-size:.84rem;opacity:.8}
+@media(max-width:760px){.fg{grid-template-columns:1fr;gap:2rem}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="vendor/react.production.min.js"></script>
+<script src="vendor/react-dom.production.min.js"></script>
+<script src="vendor/htm.umd.js"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="shared/kit.js"></script>
+<script>
+(function(){
+var LP = window.LP, html = LP.html, Ico = LP.Ico, Img = LP.Img, WaButton = LP.WaButton, Marquee = LP.Marquee;
+var MSG = 'Olá! Vi a prévia do site da Unna Estética e gostaria de agendar um horário.';
+var IG = 'https://www.instagram.com/unna_estetica/';
+
+function Nav(){ return html`<nav className="nav" aria-label="Principal"><div className="wrap">
+  <ul><li><a href="#tratamentos">Tratamentos</a></li><li><a href="#experiencia">Experiência</a></li><li><a href="#contato">Contato</a></li></ul>
+  <a href="#inicio" className="logo" aria-label="Unna Estética — início"><b>Unna</b><small>Estética</small></a>
+  <div className="cta"><${WaButton} magnetic=${false} msg=${MSG}>Agendar<//></div></div></nav>`; }
+
+function Hero(){ return html`<header className="hero" id="inicio"><div className="wrap hero-grid">
+  <div>
+    <span className="eb" data-hero-in>Jardim Camburi · Vitória</span>
+    <h1 data-split data-hero>Cuidar de você é um <em>ritual,</em> não uma pressa.</h1>
+    <p className="sub" data-hero-in>Tratamentos estéticos faciais e corporais, em um ambiente acolhedor e com atenção de verdade ao que você busca. Referência em Jardim Camburi.</p>
+    <div className="cta-row" data-hero-in>
+      <${WaButton} msg=${MSG}>Agendar pelo WhatsApp<//>
+      <a className="lnk" href="#tratamentos">Conheça os cuidados<${Ico} name="arrow" size=${16} /></a>
+    </div>
+  </div>
+  <div className="arch-wrap" data-reveal="zoom" data-delay="0.2">
+    <div className="zf arch"><div className="zi"><${Img} src="img/pil-1.jpg" alt="Detalhe das costas de uma mulher em movimento de alongamento, em tom de pele, diante de uma parede clara" eager=${true} /></div></div>
+    <div className="badge" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="cp" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" /></defs><text><textPath href="#cp" textLength="283" lengthAdjust="spacing">Referência em Jardim Camburi · Cuidado · </textPath></text></svg><i>U</i></div>
+  </div></div></header>`; }
+
+function Statement(){ return html`<section className="pad stmt" id="sobre"><div className="wrap">
+  <span className="eb c" data-reveal>Sobre a Unna</span>
+  <h2 data-split>Mais que estética: <em>um tempo só seu.</em></h2>
+  <p className="lead" data-reveal>Na Unna Estética, cada atendimento é conduzido com calma, escuta e cuidado. Um espaço em Jardim Camburi para você desacelerar e cuidar de si, no seu ritmo.</p>
+  <div className="orn" data-reveal><${Ico} name="leaf" size=${22} sw=${1.4} /></div></div></section>`; }
+
+var TR = [
+  ['spark','Cuidados faciais','Protocolos pensados para a rotina da sua pele, com atenção ao que ela pede em cada fase.'],
+  ['drop','Limpeza de pele','Um momento para renovar o aspecto da pele e começar um cuidado contínuo.'],
+  ['heart','Tratamentos corporais','Cuidados para o corpo, escolhidos conforme a sua necessidade e a orientação da equipe.'],
+  ['leaf','Massagem e relaxamento','Uma pausa para desacelerar, soltar a tensão do dia e reencontrar o bem-estar.']
+];
+function Tratamentos(){ return html`<section className="pad" id="tratamentos"><div className="wrap">
+  <div className="hd"><div><span className="eb" data-reveal>Tratamentos</span><h2 data-split>Cuidados para o <em>rosto</em> e para o <em>corpo.</em></h2></div>
+  <p className="lead" data-reveal>Toque em um cuidado para combinar o seu horário pelo WhatsApp. A equipe orienta qual faz mais sentido para você.</p></div>
+  <ul className="tr" data-stagger>
+    ${TR.map(function(t,i){ return html`<li key=${i}><a className="tc" href=${LP.wa('Olá! Gostaria de agendar/saber mais sobre: '+t[1]+'.')} target="_blank" rel="noopener">
+      <div className="top"><span className="nn">0${i+1}</span><${Ico} name=${t[0]} size=${30} sw=${1.2} /></div>
+      <h3>${t[1]}</h3><p>${t[2]}</p><span className="go">Agendar<${Ico} name="arrow" size=${15} /></span></a></li>`; })}
+  </ul>
+  <p className="note" data-reveal>Os cuidados indicados dependem de avaliação individual com a equipe.</p></div></section>`; }
+
+var RIT = [
+  ['Agende pelo WhatsApp','Envie uma mensagem e combine o melhor momento para você.'],
+  ['Chegue e se acomode','Em Jardim Camburi, um ambiente pensado para você desacelerar.'],
+  ['Aproveite o seu tempo','A equipe conduz o cuidado escolhido, com atenção e sem pressa.']
+];
+function Experiencia(){ return html`<section className="pad rit" id="experiencia"><div className="wrap rt">
+  <div className="rt-img" data-reveal="mask"><div className="zf"><div className="zi"><${Img} className="lp-px" parallax="0.05" src="img/pil-7.jpg" alt="Mulher sorrindo em um ambiente claro e acolhedor, com janela, plantas e um tapete enrolado nas mãos" /></div></div></div>
+  <div><span className="eb" data-reveal>A experiência</span><h2 data-split>Do primeiro contato ao <em>último respiro.</em></h2>
+    <ul className="rs" data-stagger>${RIT.map(function(r,i){ return html`<li key=${i}><span className="nn">${i+1}</span><div><h3>${r[0]}</h3><p>${r[1]}</p></div></li>`; })}</ul>
+    <a className="lnk" href=${LP.wa(MSG)} target="_blank" rel="noopener" data-reveal>Reservar meu horário<${Ico} name="arrow" size=${16} /></a></div></div></section>`; }
+
+var DF = [
+  ['star','Referência no bairro','Reconhecida em Jardim Camburi pelo cuidado e pela atenção em cada atendimento.'],
+  ['heart','Atenção de verdade','Escuta antes de indicar qualquer cuidado, com respeito ao seu tempo e às suas escolhas.'],
+  ['leaf','Ambiente acolhedor','Um espaço calmo e elegante, pensado para você relaxar do começo ao fim.'],
+  ['chat','Agendamento simples','Fale direto pelo WhatsApp e combine o seu horário sem complicação.']
+];
+function Diferenciais(){ return html`<section className="pad" id="diferenciais"><div className="wrap">
+  <div style=${{textAlign:'center'}}><span className="eb c" data-reveal>Por que a Unna</span><h2 data-split>Delicadeza em <em>cada detalhe.</em></h2></div>
+  <div className="dfs" data-stagger>
+    ${DF.map(function(d,i){ return html`<div key=${i}><div className="dfi"><div className="ic"><${Ico} name=${d[0]} size=${24} sw=${1.4} /></div><h3>${d[1]}</h3><p>${d[2]}</p></div></div>`; })}
+  </div></div></section>`; }
+
+function Depoimentos(){ return html`<section className="pad dep" id="depoimentos"><div className="wrap">
+  <div className="c-head"><span className="eb c" data-reveal>Depoimentos · ilustrativos</span><h2 data-split>Quem vem, <em>volta a si.</em></h2></div>
+  <div className="q" data-stagger>
+    <div><figure className="qc"><span className="qm" aria-hidden="true">“</span><blockquote>Ambiente acolhedor e uma equipe que escuta antes de indicar qualquer cuidado. Saí do atendimento leve.</blockquote><figcaption>Cliente · Jardim Camburi</figcaption></figure></div>
+    <div><figure className="qc"><span className="qm" aria-hidden="true">“</span><blockquote>Super fácil agendar pelo WhatsApp e sempre fui recebida com muita atenção.</blockquote><figcaption>Cliente · Mata da Praia</figcaption></figure></div>
+    <div><figure className="qc"><span className="qm" aria-hidden="true">“</span><blockquote>Virou o meu momento da semana. Recomendo para quem quer desacelerar.</blockquote><figcaption>Cliente · Jardim da Penha</figcaption></figure></div>
+  </div>
+  <p className="tag-il" data-reveal>Depoimentos fictícios, criados para ilustrar o layout desta prévia.</p></div></section>`; }
+
+function Final(){ return html`<section className="pad final" id="contato"><div className="final-bg" aria-hidden="true"></div><div className="wrap">
+  <span className="eb c" data-reveal>Agende</span>
+  <h2 data-split>Reserve um momento <em>para você.</em></h2>
+  <p data-reveal>Chame a equipe da Unna Estética pelo WhatsApp e combine o seu horário.</p>
+  <div className="row" data-reveal="zoom"><${WaButton} msg=${MSG}>Agendar pelo WhatsApp<//>
+    <a className="lnk" href=${IG} target="_blank" rel="noopener">@unna_estetica<${Ico} name="up" size=${15} /></a></div></div></section>`; }
+
+function Footer(){ return html`<footer><div className="wrap"><div className="fg">
+  <div><div className="logo"><b>Unna</b><small>Estética Avançada</small></div><p style=${{maxWidth:'36ch',lineHeight:1.8,fontWeight:300}}>Tratamentos estéticos faciais e corporais em Jardim Camburi, Vitória (ES).</p></div>
+  <div><h4>Contato</h4><ul><li><${Ico} name="wa" size=${18} /><a href="tel:+5527996501075">(27) 99650-1075</a></li><li><${Ico} name="spark" size=${18} /><a href=${IG} target="_blank" rel="noopener">@unna_estetica</a></li></ul></div>
+  <div><h4>Onde estamos</h4><ul><li><${Ico} name="pin" size=${18} /><span>Avenida Doutor Herwan Modenese Wanderley, 434<br/>Jardim Camburi · Vitória/ES</span></li><li><${Ico} name="clock" size=${18} /><span>Consulte horários pelo WhatsApp</span></li></ul></div></div>
+  <p className="cp">© Unna Estética. Prévia de demonstração — layout e textos ilustrativos.</p></div></footer>`; }
+
+function Page(){ return html`<main><${Nav} /><${Hero} /><div className="mq"><${Marquee} items=${['Cuidados faciais','Limpeza de pele','Tratamentos corporais','Massagem e relaxamento','Bem-estar','Jardim Camburi']} speed=${36} /></div><${Statement} /><${Tratamentos} /><${Experiencia} /><${Diferenciais} /><${Depoimentos} /><${Final} /><${Footer} /></main>`; }
+
+LP.mount(Page, { empresa:'Unna Estética', whatsapp:'5527996501075', mensagem:MSG, intro:{ title:'Unna Estética', sub:'Jardim Camburi · Vitória' }, introMs:1900 });
+})();
+</script>
+</body>
+</html>

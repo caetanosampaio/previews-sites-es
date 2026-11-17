@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R27 Pilates — Estúdio de Pilates na Praia do Canto, Vitória | Prévia de site</title>
+<meta name="description" content="Prévia de site para o estúdio R27 Pilates, na Praia do Canto, Vitória (ES). Pilates reformer, mat, funcional, postural, pré-natal e personalizado, com agendamento pelo WhatsApp.">
+<meta property="og:title" content="R27 Pilates — Movimento com calma, força com precisão">
+<meta property="og:description" content="Prévia de site criada para o estúdio R27 Pilates, Praia do Canto, Vitória (ES).">
+<meta property="og:image" content="img/pil-7.jpg">
+<meta name="theme-color" content="#f6f2e9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,300..500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/kit.css">
+<style>
+:root{--bg:#f6f2e9;--bg2:#eef0e4;--sand:#ebe2d0;--sage:#dfe6d3;--sage2:#b9c6a8;--olive:#4a5a3e;--deep:#2b3326;--fg:#2b3326;--muted:#59614f;--accent:#4a5a3e;--on-accent:#f6f2e9;--line:rgba(74,90,62,.22);--intro-bg:#dfe6d3;--intro-fg:#2b3326;--intro-ls:.06em;
+--font-display:'Marcellus',Georgia,serif;--font-body:'Jost',system-ui,sans-serif;--font-it:'Newsreader',Georgia,serif}
+html{scroll-padding-top:80px}
+body{line-height:1.7;font-weight:400}
+.wrap{width:min(1160px,calc(100% - 48px));margin-inline:auto}
+section{position:relative}
+.pad{padding:clamp(4.5rem,10vw,8rem) 0}
+.lp-btn{font-family:var(--font-body);font-weight:500;letter-spacing:.04em;padding:1rem 1.7rem}
+.ghost{display:inline-flex;align-items:center;gap:.5rem;padding:1rem 1.5rem;border-radius:999px;border:1px solid var(--olive);color:var(--olive);font-weight:500;letter-spacing:.04em;transition:background .35s,color .35s,transform .35s}
+.ghost:hover{background:var(--olive);color:var(--bg);transform:translateY(-3px)}
+.eb{display:inline-flex;align-items:center;gap:.7rem;font-size:.8rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--olive);margin-bottom:1.1rem}
+.eb::before{content:"";width:26px;height:1px;background:currentColor}
+h1,h2,h3{font-family:var(--font-display);font-weight:400}
+h2{font-size:clamp(2rem,5vw,3.8rem);line-height:1.1;letter-spacing:-.01em}
+h1 em,h2 em{font-family:var(--font-it);font-style:italic;font-weight:300;color:var(--olive)}
+.lead{color:var(--muted);font-weight:300;font-size:clamp(1.02rem,1.5vw,1.2rem);line-height:1.75}
+
+/* nav em pílula */
+.nav{position:fixed;top:12px;left:0;right:0;z-index:800;transition:top .4s}
+.pill{width:min(1100px,calc(100% - 24px));margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.55rem .6rem .55rem 1.2rem;border-radius:999px;background:rgba(246,242,233,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);transition:box-shadow .4s,background .4s}
+.nav.scrolled .pill{background:rgba(246,242,233,.92);box-shadow:0 14px 40px -18px rgba(43,51,38,.45)}
+.logo{display:flex;align-items:center;gap:.6rem;font-family:var(--font-display);font-size:1.35rem;letter-spacing:.02em}
+.logo svg{flex:none;color:var(--olive)}
+.logo small{font-family:var(--font-body);font-weight:400;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-left:.1rem}
+.nav ul{display:flex;gap:1.9rem;font-size:.92rem;font-weight:400}
+.nav ul a{color:var(--muted);transition:color .3s;padding:.5rem 0;position:relative}
+.nav ul a::after{content:"";position:absolute;left:0;right:0;bottom:.2rem;height:1px;background:var(--olive);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.nav ul a:hover{color:var(--deep)}.nav ul a:hover::after{transform:scaleX(1)}
+.nav .lp-btn{padding:.7rem 1.2rem;font-size:.9rem}
+@media(max-width:860px){.nav ul{display:none}}
+@media(max-width:420px){.logo small{display:none}.pill{padding-left:.9rem}.nav .lp-btn{padding:.65rem .95rem;font-size:.85rem}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:8.2rem 0 clamp(3rem,7vw,5rem);background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%)}
+.blob{position:absolute;border-radius:58% 42% 55% 45%/48% 56% 44% 52%;pointer-events:none;filter:blur(2px);animation:breathe 10s ease-in-out infinite,morph 18s ease-in-out infinite}
+.b1{width:min(560px,90vw);aspect-ratio:1;left:-8%;top:-6%;background:radial-gradient(circle at 35% 35%,var(--sage),transparent 70%);opacity:.9}
+.b2{width:min(640px,100vw);aspect-ratio:1;right:-14%;top:22%;background:radial-gradient(circle at 60% 40%,#eadfc8,transparent 68%);animation-delay:-4s,-6s}
+@keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+@keyframes morph{0%,100%{border-radius:58% 42% 55% 45%/48% 56% 44% 52%}50%{border-radius:42% 58% 46% 54%/56% 44% 56% 44%}}
+.hero-c{position:relative;text-align:center;max-width:980px;margin-inline:auto}
+.breath{display:inline-grid;margin-bottom:1.4rem;padding:.45rem 1.1rem .45rem .5rem;border-radius:999px;background:rgba(255,255,255,.6);border:1px solid var(--line);font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--olive);font-weight:500}
+.breath span{grid-area:1/1;display:flex;align-items:center;gap:.6rem;justify-content:center;animation:fade 8s ease-in-out infinite}
+.breath span:nth-child(2){animation-delay:-4s}
+.breath i{width:18px;height:18px;border-radius:50%;background:var(--sage2);display:inline-block;animation:breathe 8s ease-in-out infinite}
+.breath span:nth-child(2) i{animation-delay:-4s}
+@keyframes fade{0%,100%{opacity:0}15%,45%{opacity:1}60%{opacity:0}}
+.hero h1{font-size:clamp(2.3rem,5.9vw,4.9rem);line-height:1.08;letter-spacing:-.015em}
+.hero .lead{max-width:50ch;margin:1.6rem auto 0}
+.cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.1rem;justify-content:center}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;margin-top:1.8rem}
+.chip{display:inline-flex;align-items:center;gap:.5rem;padding:.55rem 1rem;border-radius:999px;background:rgba(255,255,255,.65);border:1px solid var(--line);font-size:.86rem;color:var(--deep)}
+.chip svg{color:var(--olive)}
+.trio{position:relative;display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:clamp(.6rem,2vw,1.4rem);align-items:end;max-width:980px;margin:clamp(2.6rem,6vw,4rem) auto 0}
+.shape{position:relative;overflow:hidden;animation:shapeB 9s ease-in-out infinite;background:var(--sage)}
+.shape img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.8,.2,1)}
+.shape:hover img{transform:scale(1.07)}
+@keyframes shapeB{0%,100%{transform:scale(1)}50%{transform:scale(1.025)}}
+.s1{aspect-ratio:1;border-radius:50%;margin-bottom:2.6rem}
+.s1 img{object-position:60% 55%}
+.s2{aspect-ratio:3/4.2;border-radius:999px 999px 28px 28px;animation-delay:-3s}
+.s2 img{object-position:50% 40%}
+.s3{aspect-ratio:1/1.25;border-radius:58% 42% 55% 45%/42% 52% 48% 58%;margin-bottom:1.2rem;animation-delay:-6s}
+.s3 img{object-position:70% 40%}
+
+/* modalidades */
+.mod{background:var(--bg)}
+.mod-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.mod .lead{margin:1.1rem 0 2rem;max-width:46ch}
+.acc{border-top:1px solid var(--line)}
+.acc-i{border-bottom:1px solid var(--line)}
+.acc-i h3{font-size:inherit}
+.acc-b{width:100%;display:grid;grid-template-columns:2.4rem 1fr 1.6rem;align-items:center;gap:.6rem;text-align:left;background:none;border:0;color:var(--fg);font:inherit;padding:1.2rem .2rem;min-height:56px;transition:padding .4s,color .3s}
+.acc-b:hover{color:var(--olive);padding-left:.7rem}
+.acc-b .k{font-family:var(--font-it);font-style:italic;color:var(--olive);font-size:1.05rem}
+.acc-b .tt{font-family:var(--font-display);font-size:clamp(1.25rem,2.4vw,1.65rem);line-height:1.2}
+.pl{position:relative;width:1.2rem;height:1.2rem;justify-self:end}
+.pl::before,.pl::after{content:"";position:absolute;left:0;right:0;top:50%;height:1.5px;background:currentColor;transition:transform .5s}
+.pl::after{transform:rotate(90deg)}
+.open .pl::after{transform:rotate(0)}
+.acc-p{display:grid;grid-template-rows:0fr;visibility:hidden;transition:grid-template-rows .7s cubic-bezier(.2,.8,.2,1),visibility 0s .7s}
+.open .acc-p{grid-template-rows:1fr;visibility:visible;transition-delay:0s}
+.acc-p>div{overflow:hidden}
+.acc-p p{padding:0 2.6rem 1.4rem 3rem;color:var(--muted);font-weight:300}
+.mod-media{position:relative;max-width:520px;width:100%;margin-inline:auto}
+.m1{position:relative;aspect-ratio:4/5;border-radius:200px 200px 28px 28px;overflow:hidden;background:var(--sage)}
+.m1 img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% 50%;transition:transform 1.6s cubic-bezier(.2,.8,.2,1)}
+.m1:hover img{transform:scale(1.05)}
+.m2{position:absolute;right:-8px;bottom:-26px;width:42%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid var(--bg);background:var(--sage);animation:shapeB 9s ease-in-out infinite}
+.m2 img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media(max-width:900px){.mod-grid{grid-template-columns:1fr}.mod-media{order:2;max-width:420px;margin-bottom:1.5rem}.m2{right:-4px}}
+
+/* diferenciais */
+.why{background:var(--sage)}
+.why-head{text-align:center;max-width:720px;margin:0 auto 3.2rem}
+.why-head .lead{margin-top:1rem}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;align-items:stretch}
+.why-grid>div{display:flex}
+.dc{width:100%;background:var(--bg);padding:2rem 1.6rem 2.1rem;border:1px solid var(--line);transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s,background .5s}
+.dc:hover{transform:translateY(-10px);box-shadow:0 28px 50px -26px rgba(43,51,38,.55);background:#fff}
+.why-grid>div:nth-child(1) .dc{border-radius:30px 30px 30px 110px}
+.why-grid>div:nth-child(2) .dc{border-radius:110px 30px 30px 30px}
+.why-grid>div:nth-child(3) .dc{border-radius:30px 110px 30px 30px}
+.why-grid>div:nth-child(4) .dc{border-radius:30px 30px 110px 30px}
+.dc .ic{width:54px;height:54px;border-radius:50%;background:var(--sage);display:grid;place-items:center;color:var(--olive);margin-bottom:1.3rem;transition:background .4s,color .4s}
+.dc:hover .ic{background:var(--olive);color:var(--bg)}
+.dc h3{font-size:1.35rem;line-height:1.2;margin-bottom:.6rem}
+.dc p{color:var(--muted);font-weight:300;font-size:.98rem}
+@media(max-width:1000px){.why-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.why-grid{grid-template-columns:1fr}}
+
+/* faixa de imagem */
+.band{position:relative;height:clamp(340px,62vh,560px);overflow:hidden;display:grid;place-items:center;text-align:center;color:#f6f2e9;background:var(--deep)}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(43,51,38,.72),rgba(43,51,38,.5))}
+.band-t{position:relative;z-index:2;padding:0 24px}
+.band-t p{font-family:var(--font-display);font-size:clamp(2rem,6.4vw,5rem);line-height:1.1}
+.band-t em{font-family:var(--font-it);font-style:italic;font-weight:300}
+.band-t small{display:block;margin-top:1.2rem;letter-spacing:.3em;text-transform:uppercase;font-size:.78rem;opacity:.9}
+
+/* horários */
+.hor{background:var(--bg)}
+.hor-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.hor-img{position:relative;aspect-ratio:1/1;max-width:440px;width:100%;margin-inline:auto;border-radius:999px 999px 28px 28px;overflow:hidden;background:var(--sage)}
+.hor-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%;transform:scale(1.18);transform-origin:40% 100%;transition:transform 1.6s cubic-bezier(.2,.8,.2,1)}
+.hor-img:hover img{transform:scale(1.22)}
+.hnote{display:flex;gap:.8rem;align-items:flex-start;margin:1.4rem 0 1.8rem;padding:1rem 1.2rem;border-radius:20px;background:var(--sage);color:var(--deep);font-size:.95rem}
+.hnote svg{flex:none;color:var(--olive);margin-top:3px}
+.hbox{background:#fff;border:1px solid var(--line);border-radius:28px;padding:1.6rem clamp(1rem,3vw,2rem) 1.2rem}
+.axis{position:relative;height:1.2rem;margin:0 0 .6rem 7rem;font-size:.72rem;color:var(--muted)}
+.axis span{position:absolute;transform:translateX(-50%)}
+.hrow{display:grid;grid-template-columns:7rem 1fr;gap:.2rem .8rem;align-items:center;padding:.85rem 0;border-top:1px solid var(--line)}
+.hrow strong{font-family:var(--font-display);font-weight:400;font-size:1.1rem}
+.bar{position:relative;height:14px;border-radius:99px;background:var(--bg2)}
+.bar i{position:absolute;top:0;bottom:0;border-radius:99px;background:linear-gradient(90deg,var(--sage2),var(--olive))}
+.bar.off{background:repeating-linear-gradient(90deg,var(--bg2) 0 8px,transparent 8px 14px)}
+.hrow .t{grid-column:2;font-size:.86rem;color:var(--muted)}
+.hrow.off strong,.hrow.off .t{opacity:.65}
+@media(max-width:900px){.hor-grid{grid-template-columns:1fr}.hor-img{max-width:340px}}
+@media(max-width:520px){.axis{margin-left:4.8rem}.hrow{grid-template-columns:4.8rem 1fr}.hrow strong{font-size:1rem}}
+
+/* prova social */
+.rev{background:var(--sand)}
+.score{display:flex;align-items:center;justify-content:center;gap:clamp(1.2rem,4vw,3rem);flex-wrap:wrap;text-align:left;margin-bottom:3.4rem}
+.ring{position:relative;width:170px;height:170px;flex:none}
+.ring svg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
+.ring .num{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--font-display);font-size:2.6rem;color:var(--deep)}
+.score-t h2{max-width:14ch}
+.stars{display:flex;gap:.2rem;color:var(--olive);margin:.8rem 0 .4rem}
+.stars svg{fill:currentColor}
+.score-t p{color:var(--muted)}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.tgrid>div{display:flex}
+.tc{margin:0;width:100%;background:var(--bg);padding:2rem 1.7rem;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s;border:1px solid var(--line)}
+.tc:hover{transform:translateY(-8px);box-shadow:0 26px 46px -28px rgba(43,51,38,.55)}
+.tgrid>div:nth-child(1) .tc{border-radius:0 60px 0 60px}
+.tgrid>div:nth-child(2) .tc{border-radius:60px 0 60px 0}
+.tgrid>div:nth-child(3) .tc{border-radius:0 60px 0 60px}
+.tc q{display:block;quotes:none;font-family:var(--font-it);font-style:italic;font-weight:300;font-size:1.25rem;line-height:1.55}
+.tc figcaption{margin-top:1.3rem;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--olive);font-weight:500}
+.fine{margin-top:1.6rem;text-align:center;font-size:.8rem;color:var(--muted)}
+@media(max-width:900px){.tgrid{grid-template-columns:1fr}.score{text-align:center}.score-t h2{max-width:none}.stars{justify-content:center}}
+
+/* chamada final */
+.final{background:var(--bg)}
+.cta-card{position:relative;overflow:hidden;text-align:center;border-radius:48px 48px 150px 48px;background:linear-gradient(150deg,var(--sage) 0%,var(--sage2) 100%);padding:clamp(2.8rem,8vw,6rem) clamp(1.4rem,5vw,4rem)}
+.cta-card::before,.cta-card::after{content:"";position:absolute;border-radius:50%;background:rgba(246,242,233,.35);animation:breathe 10s ease-in-out infinite}
+.cta-card::before{width:340px;height:340px;left:-120px;top:-120px}
+.cta-card::after{width:260px;height:260px;right:-80px;bottom:-90px;animation-delay:-5s}
+.cta-card>*{position:relative;z-index:1}
+.cta-card h2{font-size:clamp(2rem,5.6vw,4.4rem);max-width:18ch;margin-inline:auto}
+.cta-card h2 em{color:var(--deep)}
+.cta-card p{max-width:46ch;margin:1.2rem auto 2rem;color:var(--deep);font-weight:400}
+.cta-card .lp-btn{background:var(--deep);color:var(--bg);padding:1.1rem 2.1rem;font-size:1.02rem}
+
+/* rodapé */
+footer{background:#263021;color:rgba(246,242,233,.8);padding:4rem 0 6.5rem}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1.1fr 1.1fr;gap:2.6rem}
+footer h4{font-family:var(--font-display);font-weight:400;font-size:1.2rem;color:var(--sage2);margin:0 0 1rem}
+footer li{display:flex;gap:.7rem;margin-bottom:.75rem;line-height:1.55;font-size:.95rem}
+footer li svg{flex:none;color:var(--sage2);margin-top:4px}
+footer a:not(.lp-btn){text-decoration:underline;text-decoration-color:rgba(185,198,168,.5);text-underline-offset:3px}
+footer a:not(.lp-btn):hover{color:#fff}
+.fl{font-family:var(--font-display);font-size:1.7rem;color:#f6f2e9}
+.cp{margin-top:2.8rem;padding-top:1.4rem;border-top:1px solid rgba(246,242,233,.18);font-size:.8rem;opacity:.8}
+@media(max-width:980px){.fg{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.fg{grid-template-columns:1fr;gap:2rem}}
+
+@media(prefers-reduced-motion:reduce){.blob,.breath span,.breath i,.shape,.m2,.cta-card::before,.cta-card::after{animation:none}.breath span:nth-child(2){display:none}.breath span:first-child{opacity:1}.acc-p,.pl::before,.pl::after,.dc,.tc,.shape img,.m1 img,.hor-img img{transition:none}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="vendor/react.production.min.js"></script>
+<script src="vendor/react-dom.production.min.js"></script>
+<script src="vendor/htm.umd.js"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="shared/kit.js"></script>
+<script>
+(function(){
+var LP = window.LP, html = LP.html, Ico = LP.Ico, Img = LP.Img, WaButton = LP.WaButton;
+var useState = LP.React.useState;
+var MSG = 'Olá! Vi o site do R27 Pilates e quero agendar uma aula.';
+var MAPS = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Av. Des. Santos Neves, 601, Praia do Canto, Vitória - ES, 29055-721');
+
+function Mark(){ return html`<svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true"><circle cx="16" cy="16" r="13.5"/><path d="M16 26c0-6 1-11 6-15-6 0-9 4-10 8M16 26c0-4-1-8-5-11 4 0 6 2 7 5"/></svg>`; }
+
+function Nav(){ return html`<nav className="nav"><div className="pill">
+  <a href="#inicio" className="logo" aria-label="R27 Pilates, início"><${Mark} />R27<small>Pilates</small></a>
+  <ul><li><a href="#modalidades">Modalidades</a></li><li><a href="#diferenciais">Diferenciais</a></li><li><a href="#horarios">Horários</a></li><li><a href="#contato">Contato</a></li></ul>
+  <${WaButton} magnetic=${false} msg=${MSG}>Agendar aula<//></div></nav>`; }
+
+function Hero(){ return html`<header className="hero" id="inicio">
+  <div className="blob b1" aria-hidden="true"></div><div className="blob b2" aria-hidden="true"></div>
+  <div className="wrap">
+    <div className="hero-c">
+      <span className="breath" data-hero-in aria-hidden="true"><span><i></i>Inspire</span><span><i></i>Expire</span></span>
+      <div><span className="eb" data-hero-in>Estúdio de pilates · Praia do Canto, Vitória</span></div>
+      <h1 data-split data-hero>Movimento com <em>calma,</em><br/>força com <em>precisão.</em></h1>
+      <p className="lead" data-hero-in>No R27 Pilates você encontra aulas pensadas para o seu corpo e o seu ritmo — do solo ao reformer, do pré-natal ao personalizado. Reserve o seu horário e comece a se mover melhor.</p>
+      <div className="cta" data-hero-in><${WaButton} msg=${MSG}>Agendar minha aula<//><a className="ghost" href="#horarios">Ver horários</a></div>
+      <div className="chips" data-hero-in><span className="chip"><${Ico} name="star" size=${16} /> 4,95 no Wellhub · 20 avaliações</span><span className="chip"><${Ico} name="check" size=${16} /> Disponível no Wellhub</span></div>
+    </div>
+    <div className="trio" data-stagger>
+      <div><div className="shape s1"><${Img} src="img/pil-2.jpg" alt="Mulher em alongamento com os braços estendidos" eager=${true} /></div></div>
+      <div><div className="shape s2"><${Img} src="img/pil-7.jpg" alt="Mulher sorrindo segurando um tapete de pilates em uma sala iluminada" eager=${true} /></div></div>
+      <div><div className="shape s3"><${Img} src="img/pil-1.jpg" alt="Detalhe das costas durante um alongamento lateral" eager=${true} /></div></div>
+    </div>
+  </div></header>`; }
+
+var MOD = [
+  ['Pilates funcional','Movimentos do dia a dia trabalhados com controle e respiração, para ganhar força, mobilidade e consciência corporal.'],
+  ['Fit Pilates','Uma pegada mais dinâmica do método, para quem quer movimento com energia e ritmo.'],
+  ['Pilates postural','Foco em alinhamento e na forma como você se movimenta, com atenção aos detalhes da postura.'],
+  ['Pilates pré-natal','Movimento acolhedor para gestantes. Fale com o estúdio pelo WhatsApp para saber como participar.'],
+  ['Pilates personalizado','Atenção individual, ajustada ao seu objetivo e ao seu momento.'],
+  ['Pilates reformer','Trabalho nos aparelhos, com molas que guiam e desafiam cada movimento com precisão.'],
+  ['Mat pilates (solo)','Aula no solo, usando o peso do próprio corpo, a respiração e o controle de cada gesto.']
+];
+function Modalidades(){
+  var st = useState(0), o = st[0], setO = st[1];
+  return html`<section className="pad mod" id="modalidades"><div className="wrap mod-grid">
+    <div>
+      <span className="eb" data-reveal>Modalidades</span>
+      <h2 data-split>Um método, <em>muitos caminhos.</em></h2>
+      <p className="lead" data-reveal>Escolha a modalidade que combina com o seu momento. Dúvida sobre qual é a ideal? É só perguntar pelo WhatsApp.</p>
+      <div className="acc" data-reveal>
+        ${MOD.map(function(m,i){ var open = o===i; return html`<div key=${i} className=${'acc-i' + (open ? ' open' : '')}>
+          <h3><button className="acc-b" id=${'acb' + i} aria-expanded=${open} aria-controls=${'acp' + i} onClick=${function(){ setO(open ? -1 : i); }}><span className="k">0${i+1}</span><span className="tt">${m[0]}</span><span className="pl" aria-hidden="true"></span></button></h3>
+          <div className="acc-p" id=${'acp' + i}><div><p>${m[1]}</p></div></div></div>`; })}
+      </div>
+    </div>
+    <div className="mod-media" data-reveal="zoom">
+      <div className="m1"><${Img} src="img/pil-3.jpg" alt="Estúdio amplo e claro com aparelhos de reformer alinhados" /></div>
+      <div className="m2"><${Img} src="img/pil-8.jpg" alt="Aluna segurando um anel de pilates sobre o aparelho" /></div>
+    </div>
+  </div></section>`;
+}
+
+var WHY = [
+  ['calendar','Aulas com agendamento','Turmas organizadas e atenção de verdade: você agenda o seu horário pelo WhatsApp e chega com o seu lugar reservado.'],
+  ['spark','Do solo ao reformer','Mat pilates, reformer, funcional e mais: modalidades para cada fase da sua rotina.'],
+  ['heart','Para cada fase','Do pilates pré-natal ao personalizado, o movimento certo para o seu momento.'],
+  ['leaf','Disponível no Wellhub','Já usa o Wellhub? O estúdio está na plataforma. Consulte pelo WhatsApp como agendar.']
+];
+function Why(){ return html`<section className="pad why" id="diferenciais"><div className="wrap">
+  <div className="why-head"><span className="eb" data-reveal>Diferenciais</span><h2 data-split>Cuidar do corpo pode ser <em>leve.</em></h2><p className="lead" data-reveal>Um espaço calmo, aulas com hora marcada e modalidades para quem quer começar, retomar ou evoluir.</p></div>
+  <div className="why-grid" data-stagger>
+    ${WHY.map(function(w,i){ return html`<div key=${i}><article className="dc"><span className="ic"><${Ico} name=${w[0]} size=${24} sw=${1.5} /></span><h3>${w[1]}</h3><p>${w[2]}</p></article></div>`; })}
+  </div></div></section>`; }
+
+function Band(){ return html`<section className="band" aria-label="Respire, alinhe, recomece">
+  <${Img} className="lp-px" parallax="0.08" src="img/pil-4.jpg" alt="Sala de pilates com tapetes, blocos e janelas para um jardim" />
+  <div className="band-t"><p data-reveal>Respire. Alinhe. <em>Recomece.</em></p><small data-reveal data-delay="0.15">Praia do Canto · Vitória</small></div></section>`; }
+
+var DAYS = [['Segunda',[[6,12],[15,20]]],['Terça',[[6,12],[15,20]]],['Quarta',[[6,12],[15,20]]],['Quinta',[[6,12],[15,20]]],['Sexta',[[6,12]]],['Sábado',[]],['Domingo',[]]];
+var AX = [6,12,15,20];
+function pct(h){ return ((h - 6) / 14 * 100); }
+function Horarios(){ return html`<section className="pad hor" id="horarios"><div className="wrap hor-grid">
+  <div className="hor-img" data-reveal="mask"><${Img} src="img/pil-6.jpg" alt="Mulher praticando uma extensão de coluna sobre um tapete de cortiça" /></div>
+  <div>
+    <span className="eb" data-reveal>Horários</span>
+    <h2 data-split>Encontre o seu <em>momento do dia.</em></h2>
+    <div className="hnote" data-reveal><${Ico} name="calendar" size=${20} /><span>É preciso agendar para participar das aulas. Horários conforme a listagem do estúdio no Wellhub; confirme pelo WhatsApp.</span></div>
+    <div className="hbox" data-reveal>
+      <div className="axis" aria-hidden="true">${AX.map(function(h){ return html`<span key=${h} style=${{left: pct(h) + '%'}}>${h}h</span>`; })}</div>
+      <ul>
+        ${DAYS.map(function(d,i){ var segs = d[1]; return html`<li key=${i} className=${'hrow' + (segs.length ? '' : ' off')}>
+          <strong>${d[0]}</strong>
+          <div className=${'bar' + (segs.length ? '' : ' off')} aria-hidden="true">${segs.map(function(s,j){ return html`<i key=${j} data-reveal="maskx" data-delay=${0.1 + i * 0.05} style=${{left: pct(s[0]) + '%', width: (pct(s[1]) - pct(s[0])) + '%'}}></i>`; })}</div>
+          <span className="t">${segs.length ? segs.map(function(s){ return s[0] + 'h–' + s[1] + 'h'; }).join(' · ') : 'Fechado'}</span>
+        </li>`; })}
+      </ul>
+    </div>
+  </div></div></section>`; }
+
+function Prova(){ return html`<section className="pad rev" id="avaliacoes"><div className="wrap">
+  <div className="score">
+    <div className="ring" data-draw-wrap data-reveal="zoom"><svg viewBox="0 0 170 170" aria-hidden="true"><circle cx="85" cy="85" r="76" fill="none" stroke="rgba(74,90,62,.18)" strokeWidth="6"/><circle data-draw cx="85" cy="85" r="76" fill="none" stroke="#4a5a3e" strokeWidth="6" strokeLinecap="round"/></svg><span className="num" data-count="4.95">4,95</span></div>
+    <div className="score-t"><h2 data-split>Quem vem, <em>aprova.</em></h2>
+      <div className="stars" aria-hidden="true">${[0,1,2,3,4].map(function(i){ return html`<${Ico} key=${i} name="star" size=${20} />`; })}</div>
+      <p data-reveal>4,95 no Wellhub · 20 avaliações</p></div>
+  </div>
+  <div className="tgrid" data-stagger>
+    <div><figure className="tc"><blockquote style=${{margin:0}}><q>Cada aula tem atenção ao meu ritmo. Saio mais leve e com a postura muito melhor.</q></blockquote><figcaption>Cliente · Praia do Canto</figcaption></figure></div>
+    <div><figure className="tc"><blockquote style=${{margin:0}}><q>Agendar pelo WhatsApp é simples, e o estúdio é um respiro no meio do dia.</q></blockquote><figcaption>Cliente · Jardim da Penha</figcaption></figure></div>
+    <div><figure className="tc"><blockquote style=${{margin:0}}><q>Faço pelo Wellhub e encaixo as aulas entre o trabalho e a rotina. Ambiente muito acolhedor.</q></blockquote><figcaption>Cliente · Santa Lúcia</figcaption></figure></div>
+  </div>
+  <p className="fine">Depoimentos ilustrativos, criados para esta prévia. A nota 4,95 refere-se à listagem do estúdio no Wellhub.</p>
+  </div></section>`; }
+
+function Final(){ return html`<section className="pad final" id="agendar"><div className="wrap"><div className="cta-card" data-reveal>
+  <span className="eb">Primeira aula</span>
+  <h2>Sua aula começa com <em>uma mensagem.</em></h2>
+  <p>Fale com o estúdio pelo WhatsApp, escolha o horário e venha se mover. É preciso agendar para participar das aulas.</p>
+  <${WaButton} msg=${MSG}>Agendar pelo WhatsApp<//></div></div></section>`; }
+
+function Footer(){ return html`<footer id="contato"><div className="wrap"><div className="fg">
+  <div><div className="fl">R27 Pilates</div><p style=${{maxWidth:'32ch',marginTop:'.8rem'}}>Estúdio de pilates na Praia do Canto, Vitória. Aulas com agendamento e disponível no Wellhub.</p></div>
+  <div><h4>Contato</h4><ul><li><${Ico} name="phone" size=${18} /><span>Telefone / WhatsApp<br/><a href="tel:+5527981697320">(27) 98169-7320</a></span></li><li><${Ico} name="wa" size=${18} /><span>Agendamento pelo WhatsApp</span></li></ul></div>
+  <div><h4>Onde estamos</h4><ul><li><${Ico} name="pin" size=${18} /><span>Av. Des. Santos Neves, 601<br/>Praia do Canto · Vitória/ES<br/>CEP 29055-721<br/><a href=${MAPS} target="_blank" rel="noopener">Ver no mapa</a></span></li></ul></div>
+  <div><h4>Horários</h4><ul><li><${Ico} name="clock" size=${18} /><span>Seg a qui: 6h–12h e 15h–20h<br/>Sexta: 6h–12h<br/>Sáb e dom: fechado<br/><small style=${{opacity:.8}}>Agendamento necessário</small></span></li></ul></div></div>
+  <p className="cp">© R27 Pilates. Prévia de demonstração — layout e textos ilustrativos.</p></div></footer>`; }
+
+function Page(){ return html`<main><${Nav} /><${Hero} /><${Modalidades} /><${Why} /><${Band} /><${Horarios} /><${Prova} /><${Final} /><${Footer} /></main>`; }
+
+LP.mount(Page, { empresa:'R27 Pilates', whatsapp:'5527981697320', mensagem:MSG, intro:{ title:'R27 PILATES', sub:'Praia do Canto · Vitória' }, introMs:1900 });
+})();
+</script>
+</body>
+</html>

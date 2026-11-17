@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vila Fisio — Reabilitação e Terapia Aquática em Itapuã, Vila Velha | Prévia de site</title>
+<meta name="description" content="Prévia de site para a Vila Fisio (CIRTA), Centro de Reabilitação e Terapia Aquática em Itapuã, Vila Velha (ES).">
+<meta property="og:title" content="Vila Fisio — Movimento que devolve leveza ao seu dia">
+<meta property="og:description" content="Prévia de site criada para a Vila Fisio, Centro de Reabilitação e Terapia Aquática em Vila Velha (ES).">
+<meta property="og:image" content="img/fisio-8.jpg">
+<meta name="theme-color" content="#f0f8fa">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/kit.css">
+<style>
+:root{--bg:#f0f8fa;--fg:#0b2f3a;--accent:#0a6b7d;--on-accent:#ffffff;--deep:#062a35;--aqua:#8fe0e8;--foam:#dcf0f3;--muted:#3f5f69;--card:#ffffff;
+--intro-bg:#eaf7f9;--intro-fg:#062a35;--intro-ls:0;
+--font-display:'Outfit',system-ui,sans-serif;--font-body:'DM Sans',system-ui,sans-serif}
+body{line-height:1.5}
+.wrap{width:min(1180px,calc(100% - 40px));margin-inline:auto}
+section{position:relative}
+.pad{padding:clamp(4rem,9vw,7.5rem) 0}
+h1,h2,h3,h4{font-family:var(--font-display);letter-spacing:-.02em}
+h2{font-weight:700;font-size:clamp(2rem,4.6vw,3.5rem);line-height:1.08}
+h2 .a{color:var(--accent)}
+.lead{color:var(--muted);font-size:1.08rem;line-height:1.7;max-width:52ch;margin-top:1.1rem}
+.eb{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:rgba(10,107,125,.1);padding:.45rem .95rem;border-radius:999px;margin-bottom:1.1rem}
+.lp-btn{font-family:var(--font-display);font-weight:600;font-size:1rem}
+.lp-btn.ghost{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 2px rgba(11,47,58,.22)}
+.lp-btn.ghost:hover{background:#fff;box-shadow:inset 0 0 0 2px var(--accent);filter:none}
+.lp-btn.light{background:#fff;color:var(--deep)}
+.lp-btn.light:hover{box-shadow:0 14px 40px -10px rgba(143,224,232,.8)}
+.lp-btn.ghost-l{background:transparent;color:#eaf7f9;box-shadow:inset 0 0 0 2px rgba(234,247,249,.4)}
+.lp-btn.ghost-l:hover{background:rgba(255,255,255,.1);box-shadow:inset 0 0 0 2px var(--aqua);filter:none}
+
+/* ondas */
+.waves{position:absolute;left:0;right:0;height:clamp(46px,8vw,110px);overflow:hidden;pointer-events:none;z-index:1}
+.waves.bot{bottom:-1px}.waves.top{top:-1px}
+.waves svg{position:absolute;left:0;top:0;width:200%;height:100%;animation:wv 16s linear infinite}
+.waves svg+svg{animation-duration:26s;animation-direction:reverse;opacity:.55}
+@keyframes wv{to{transform:translateX(-50%)}}
+@keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes rise{0%{transform:translateY(0) scale(.6);opacity:0}15%{opacity:.8}100%{transform:translateY(-340px) scale(1.1);opacity:0}}
+
+/* nav */
+.nav{position:fixed;top:12px;left:0;right:0;z-index:800;pointer-events:none}
+.bar{pointer-events:auto;width:min(1180px,calc(100% - 20px));margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.5rem .5rem .5rem 1rem;border-radius:999px;background:rgba(255,255,255,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(10,107,125,.14);box-shadow:0 12px 32px -18px rgba(6,42,53,.45);transition:background .35s,box-shadow .35s}
+.nav.scrolled .bar{background:rgba(255,255,255,.94);box-shadow:0 14px 36px -16px rgba(6,42,53,.5)}
+.logo{display:flex;align-items:center;gap:.55rem;font-family:var(--font-display);font-weight:700;font-size:1.2rem;letter-spacing:-.01em;min-width:0}
+.logo .ic{width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;flex:none}
+.logo small{display:none;font-family:var(--font-body);font-weight:500;font-size:.68rem;letter-spacing:.04em;color:var(--muted);line-height:1.1}
+.logo span{display:flex;flex-direction:column}
+.bar ul{display:flex;gap:1.6rem;font-weight:500;font-size:.92rem}
+.bar ul a{padding:.4rem .1rem;color:var(--muted);transition:color .25s}
+.bar ul a:hover{color:var(--accent)}
+.bar .lp-btn{padding:.7rem 1.15rem;font-size:.92rem}
+@media(max-width:860px){.bar ul{display:none}}
+@media(min-width:520px){.logo small{display:block}}
+
+/* hero */
+.hero{position:relative;padding:clamp(7rem,13vw,8.5rem) 0 0;overflow:hidden;background:radial-gradient(900px 520px at 88% 6%,#c4ecf1 0,transparent 62%),radial-gradient(700px 440px at -5% 85%,#d9f1f4 0,transparent 60%),var(--bg)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,4vw,4rem);align-items:center;padding-bottom:clamp(6rem,11vw,9rem)}
+.hero h1{font-weight:800;font-size:clamp(2.45rem,6.3vw,5.2rem);line-height:1.02;letter-spacing:-.03em}
+.hero h1 .a{color:var(--accent)}
+.hero .lead{font-size:clamp(1.05rem,1.6vw,1.2rem)}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.trust{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;margin-top:2rem;font-weight:500;font-size:.95rem;color:var(--muted)}
+.trust li{display:flex;align-items:center;gap:.5rem}
+.trust svg{color:var(--accent);flex:none}
+.arch-wrap{position:relative;justify-self:center;width:min(100%,480px)}
+.arch-wrap::before{content:"";position:absolute;inset:-14px -14px auto auto;width:64%;aspect-ratio:1;border-radius:50%;border:2px dashed rgba(10,107,125,.35);z-index:0}
+.arch{position:relative;z-index:1;aspect-ratio:4/5;border-radius:999px 999px 36px 36px;overflow:hidden;box-shadow:0 40px 80px -34px rgba(6,42,53,.6);background:var(--foam)}
+.arch img{transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.arch:hover img{transform:scale(1.04)}
+.chip{position:absolute;z-index:3;display:flex;align-items:center;gap:.6rem;background:#fff;border-radius:18px;padding:.7rem 1rem;box-shadow:0 18px 40px -16px rgba(6,42,53,.5);font-weight:700;font-size:.9rem;font-family:var(--font-display);animation:flt 6s ease-in-out infinite}
+.chip small{display:block;font-family:var(--font-body);font-weight:500;color:var(--muted);font-size:.74rem}
+.chip i{width:38px;height:38px;border-radius:12px;background:var(--accent);color:#fff;display:grid;place-items:center;flex:none}
+.chip.c1{left:-6px;bottom:18%}
+.chip.c2{right:-4px;top:14%;animation-delay:-3s}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.arch-wrap{width:min(100%,420px)}}
+@media(max-width:420px){.chip{padding:.55rem .8rem;font-size:.82rem}.chip.c1{left:4px}.chip.c2{right:4px}}
+
+.mq{background:var(--deep);color:var(--aqua);font-family:var(--font-display);font-weight:600;font-size:clamp(1.2rem,3vw,2rem);padding:1.1rem 0;position:relative;z-index:2}
+
+/* diferenciais */
+.dif{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2.5rem,6vw,5.5rem);align-items:center}
+.collage{position:relative;width:min(100%,500px);justify-self:center;padding-bottom:12%}
+.col-main{aspect-ratio:4/5;border-radius:36px;overflow:hidden;position:relative;box-shadow:0 36px 70px -34px rgba(6,42,53,.55)}
+.col-main img,.col-sm img{transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.col-main:hover img,.col-sm:hover img{transform:scale(1.05)}
+.col-sm{position:absolute;right:-4%;bottom:0;width:48%;aspect-ratio:1;border-radius:28px;overflow:hidden;border:8px solid var(--bg);box-shadow:0 24px 50px -24px rgba(6,42,53,.6)}
+.stat{position:absolute;left:-3%;top:8%;z-index:3;background:var(--accent);color:#fff;border-radius:22px;padding:.9rem 1.2rem;box-shadow:0 18px 40px -16px rgba(10,107,125,.8)}
+.stat b{font-family:var(--font-display);font-size:2.2rem;line-height:1;display:block;font-weight:800}
+.stat span{font-size:.8rem;font-weight:500;opacity:.95}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem}
+.cards>div{display:flex}.card{flex:1}
+.card{background:var(--card);border-radius:24px;padding:1.5rem;border:1px solid rgba(10,107,125,.12);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s,border-color .4s}
+.card:hover{transform:translateY(-6px);box-shadow:0 26px 50px -26px rgba(6,42,53,.45);border-color:rgba(10,107,125,.4)}
+.card .ib{width:50px;height:50px;border-radius:16px;background:var(--foam);color:var(--accent);display:grid;place-items:center;transition:.4s}
+.card:hover .ib{background:var(--accent);color:#fff;transform:rotate(-6deg)}
+.card h3{font-size:1.2rem;font-weight:700;margin:1rem 0 .4rem}
+.card p{color:var(--muted);font-size:.96rem;line-height:1.6}
+@media(max-width:900px){.dif{grid-template-columns:1fr}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}.col-sm{right:0}.stat{left:6px}}
+
+/* serviços */
+.srv{background:linear-gradient(180deg,var(--bg),var(--foam));padding-top:clamp(1rem,3vw,2rem)}
+.srv-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-bottom:2.8rem}
+.srv-head .lead{margin-top:0}
+.bento{display:grid;grid-template-columns:repeat(3,1fr);grid-template-areas:"fi fi hi" "to co nu" "to co ac";grid-auto-rows:minmax(180px,auto);gap:1rem}
+.bento>*:nth-child(1){grid-area:fi}.bento>*:nth-child(2){grid-area:hi}.bento>*:nth-child(3){grid-area:to}.bento>*:nth-child(4){grid-area:co}.bento>*:nth-child(5){grid-area:nu}.bento>*:nth-child(6){grid-area:ac}
+.bento>div{display:flex}.bento>div>.sv{flex:1;min-width:0}
+.bento>div:nth-child(1){min-height:340px}
+.sv{position:relative;display:flex;flex-direction:column;justify-content:flex-end;border-radius:30px;overflow:hidden;padding:1.6rem;isolation:isolate;transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s}
+.sv:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(6,42,53,.55)}
+.sv h3{font-size:clamp(1.35rem,2.2vw,1.8rem);font-weight:700;line-height:1.1}
+.sv p{font-size:.95rem;line-height:1.55;margin-top:.4rem;max-width:36ch}
+.sv .go{display:inline-flex;align-items:center;gap:.4rem;margin-top:.9rem;font-weight:700;font-size:.88rem;font-family:var(--font-display)}
+.sv .go svg{transition:transform .3s}
+.sv:hover .go svg{transform:translateX(5px)}
+.sv.img{color:#fff;min-height:300px}
+.sv.img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.sv.img:hover img{transform:scale(1.07)}
+.sv.img::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(6,42,53,.92) 8%,rgba(6,42,53,.35) 55%,rgba(6,42,53,.05))}
+.sv.hy{background:linear-gradient(165deg,#0f8196,#062a35);color:#fff;min-height:300px}
+.sv.hy .big{position:absolute;right:1.2rem;top:1.2rem;color:var(--aqua);opacity:.9;z-index:2}
+.sv.hy .tag{z-index:2;position:absolute;left:1.6rem;top:1.5rem;background:rgba(255,255,255,.16);border-radius:999px;padding:.3rem .8rem;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.sv.hy .waves{height:70px;opacity:.9}
+.sv.hy h3,.sv.hy p,.sv.hy .go{position:relative;z-index:2}
+.sv.ic{background:#fff;border:1px solid rgba(10,107,125,.14);justify-content:flex-start;gap:.2rem;min-height:0;padding:1.3rem 1.5rem}
+.sv.ic .ib{width:44px;height:44px;border-radius:14px;background:var(--foam);color:var(--accent);display:grid;place-items:center;margin-bottom:.7rem;transition:.4s}
+.sv.ic:hover .ib{background:var(--accent);color:#fff}
+.sv.ic h3{font-size:1.2rem}
+.sv.ic p{color:var(--muted);font-size:.9rem;margin-top:.25rem}
+.sv.ic .go{color:var(--accent);margin-top:.6rem}
+@media(max-width:900px){.bento{grid-template-columns:1fr 1fr;grid-template-areas:none;grid-auto-rows:auto}.bento>*{grid-area:auto!important}.bento>div:nth-child(1){grid-column:1/-1;min-height:320px}}
+@media(max-width:560px){.bento{grid-template-columns:1fr}.bento>div:nth-child(n){grid-column:auto}}
+
+/* hidroterapia */
+.hyd{background:linear-gradient(170deg,#062a35 0%,#0a5565 100%);color:#eaf7f9;overflow:hidden}
+.hyd-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,6vw,5rem);align-items:center;padding:clamp(3rem,5vw,4rem) 0}
+.hyd .eb{background:rgba(143,224,232,.14);color:var(--aqua)}
+.hyd h2 .a{color:var(--aqua)}
+.hyd .lead{color:rgba(234,247,249,.82)}
+.checks{margin:1.6rem 0 2rem;display:grid;gap:.8rem}
+.checks li{display:flex;gap:.8rem;align-items:flex-start;line-height:1.55}
+.checks .ck{flex:none;width:26px;height:26px;border-radius:50%;background:var(--aqua);color:var(--deep);display:grid;place-items:center;margin-top:1px}
+.blob{position:relative;justify-self:center;width:min(100%,470px);aspect-ratio:1}
+.blob .shape{position:absolute;inset:0;border-radius:58% 42% 55% 45%/50% 56% 44% 50%;overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.6);border:6px solid rgba(143,224,232,.35)}
+.blob .shape img{transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.blob:hover .shape img{transform:scale(1.06)}
+.bub{position:absolute;bottom:6%;border-radius:50%;border:2px solid rgba(143,224,232,.7);background:rgba(143,224,232,.12);animation:rise 7s ease-in infinite;z-index:2}
+@media(max-width:900px){.hyd-grid{grid-template-columns:1fr}}
+
+/* começar */
+.go-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.go-img{aspect-ratio:4/5;border-radius:36px 36px 120px 36px;overflow:hidden;position:relative;width:min(100%,430px);justify-self:center;box-shadow:0 36px 70px -34px rgba(6,42,53,.55)}
+.go-img img{transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.go-img:hover img{transform:scale(1.05)}
+.steps{margin-top:2.2rem;display:grid;gap:0;position:relative}
+.step{display:grid;grid-template-columns:56px 1fr;gap:1.2rem;padding-bottom:1.8rem;position:relative}
+.step:not(:last-child)::before{content:"";position:absolute;left:27px;top:56px;bottom:0;border-left:2px dashed rgba(10,107,125,.35)}
+.step .n{width:56px;height:56px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-family:var(--font-display);font-weight:700;font-size:1.2rem;transition:transform .4s}
+.step:hover .n{transform:scale(1.1) rotate(-6deg)}
+.step h3{font-size:1.25rem;font-weight:700;margin-bottom:.25rem;padding-top:.25rem}
+.step p{color:var(--muted);line-height:1.6}
+@media(max-width:900px){.go-grid{grid-template-columns:1fr}.go-img{aspect-ratio:16/11;border-radius:30px 30px 90px 30px;width:100%}}
+
+/* depoimentos */
+.tst{background:var(--foam)}
+.tst-head{display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;flex-wrap:wrap}
+.il{font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);border:1.5px solid rgba(10,107,125,.35);border-radius:999px;padding:.4rem .9rem}
+.q{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.8rem;align-items:start}
+.q>div{display:flex}.q .st svg{fill:currentColor}
+.q figure{flex:1;margin:0;background:#fff;border-radius:28px;padding:1.9rem;position:relative;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s;box-shadow:0 18px 40px -30px rgba(6,42,53,.5)}
+.q figure:hover{transform:translateY(-6px);box-shadow:0 30px 55px -28px rgba(6,42,53,.5)}
+.q>div:nth-child(2){margin-top:2rem}
+.q .mk{font-family:var(--font-display);font-size:4rem;line-height:.6;color:var(--aqua);font-weight:800;display:block;height:1.6rem}
+.q .st{display:flex;gap:2px;color:#b7791f;margin:.9rem 0 .8rem}
+.q blockquote{margin:0;font-size:1.05rem;line-height:1.65}
+.q figcaption{margin-top:1.2rem;font-weight:700;font-size:.85rem;color:var(--accent);letter-spacing:.04em}
+@media(max-width:900px){.q{grid-template-columns:1fr}.q>div:nth-child(2){margin-top:0}}
+
+/* final */
+.final{background:var(--deep);color:#eaf7f9;text-align:center;overflow:hidden;padding:clamp(7rem,13vw,10rem) 0 clamp(4rem,8vw,6rem)}
+.final h2{font-size:clamp(2.2rem,6vw,4.6rem);font-weight:800;line-height:1.04}
+.final h2 .a{color:var(--aqua)}
+.final p{color:rgba(234,247,249,.82);max-width:46ch;margin:1.2rem auto 2rem;font-size:1.1rem;line-height:1.65}
+.final .cta-row{justify-content:center}
+
+footer{background:#041e27;color:rgba(234,247,249,.78);padding:3.4rem 0 6rem}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1.2fr;gap:3rem}
+footer .logo{color:#fff;margin-bottom:1rem}
+footer .logo small{color:rgba(234,247,249,.7)}
+footer h4{color:var(--aqua);font-size:1.05rem;font-weight:600;margin-bottom:1rem;letter-spacing:0}
+footer li{display:flex;gap:.7rem;margin-bottom:.8rem;line-height:1.5}
+footer li svg{flex:none;color:var(--aqua);margin-top:3px}
+footer a:not(.lp-btn){text-decoration:underline;text-decoration-color:rgba(143,224,232,.45);text-underline-offset:3px}
+footer a:not(.lp-btn):hover{color:#fff;text-decoration-color:var(--aqua)}
+.cp{margin-top:2.4rem;padding-top:1.4rem;border-top:1px solid rgba(234,247,249,.14);font-size:.82rem;color:rgba(234,247,249,.7)}
+@media(max-width:820px){.fg{grid-template-columns:1fr;gap:2rem}}
+
+@media (prefers-reduced-motion:reduce){.waves svg,.chip,.bub{animation:none!important}.sv,.card,.q figure,.arch img,.sv.img img{transition:none}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="vendor/react.production.min.js"></script>
+<script src="vendor/react-dom.production.min.js"></script>
+<script src="vendor/htm.umd.js"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="shared/kit.js"></script>
+<script>
+(function(){
+var LP = window.LP, html = LP.html, Ico = LP.Ico, Img = LP.Img, WaButton = LP.WaButton, Marquee = LP.Marquee;
+var MSG = 'Olá! Vi a prévia do site da Vila Fisio e gostaria de agendar uma avaliação.';
+var TEL1 = '(27) 3229-7927', TEL2 = '(27) 3062-6927';
+var MAPS = 'https://www.google.com/maps/search/?api=1&query=Rua+Porto+Alegre+8+Itapu%C3%A3+Vila+Velha+ES';
+
+function Waves(p){
+  var seg = 'c150 -60 450 60 600 0 ';
+  var d = 'M0 60 ' + seg + seg + seg + seg + (p.top ? 'V0 H0 Z' : 'V120 H0 Z');
+  var d2 = 'M0 70 ' + seg + seg + seg + seg + (p.top ? 'V0 H0 Z' : 'V120 H0 Z');
+  return html`<div className=${'waves ' + (p.top ? 'top' : 'bot')} aria-hidden="true">
+    <svg viewBox="0 0 2400 120" preserveAspectRatio="none"><path d=${d2} fill=${p.fill}/></svg>
+    <svg viewBox="0 0 2400 120" preserveAspectRatio="none"><path d=${d} fill=${p.fill}/></svg>
+  </div>`;
+}
+
+function Nav(){ return html`<nav className="nav" aria-label="Principal"><div className="bar">
+  <a href="#inicio" className="logo" aria-label="Vila Fisio — início"><i className="ic"><${Ico} name="drop" size=${18} sw=${2} /></i><span>Vila Fisio<small>Reabilitação e Terapia Aquática</small></span></a>
+  <ul><li><a href="#diferenciais">Diferenciais</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#hidroterapia">Hidroterapia</a></li><li><a href="#contato">Contato</a></li></ul>
+  <${WaButton} magnetic=${false} msg=${MSG}>Agendar<//></div></nav>`; }
+
+function Hero(){ return html`<header className="hero" id="inicio">
+  <div className="wrap hero-grid">
+    <div>
+      <span className="eb" data-hero-in><${Ico} name="pin" size=${15} /> Itapuã · Vila Velha</span>
+      <h1 data-split data-hero>Movimento que devolve <span className="a">leveza</span> ao seu dia.</h1>
+      <p className="lead" data-hero-in>Fisioterapia, hidroterapia e mais quatro especialidades no mesmo lugar. Reabilitação com atenção de perto para você voltar a se mover com confiança.</p>
+      <div className="cta-row" data-hero-in>
+        <${WaButton} msg=${MSG}>Agendar avaliação<//>
+        <a className="lp-btn ghost" href="tel:+552732297927"><${Ico} name="phone" size=${18} /> <span>${TEL1}</span></a>
+      </div>
+      <ul className="trust" data-hero-in>
+        <li><${Ico} name="check" size=${18} sw=${2.4} /> Desde 2004</li>
+        <li><${Ico} name="check" size=${18} sw=${2.4} /> Terapia aquática</li>
+        <li><${Ico} name="check" size=${18} sw=${2.4} /> 6 especialidades</li>
+      </ul>
+    </div>
+    <div className="arch-wrap" data-hero-in>
+      <div className="arch"><${Img} className="lp-cover" src="img/fisio-8.jpg" alt="Fisioterapeuta sorrindo durante o atendimento a uma paciente deitada na maca" eager=${true} /></div>
+      <div className="chip c1"><i><${Ico} name="drop" size=${20} /></i><span>Hidroterapia<small>Terapia aquática</small></span></div>
+      <div className="chip c2"><i><${Ico} name="heart" size=${20} /></i><span>Cuidado individual<small>Plano para cada pessoa</small></span></div>
+    </div>
+  </div>
+  <${Waves} fill="#062a35" />
+</header>`; }
+
+var DIF = [
+  ['drop','Terapia aquática','Exercícios na água, com menos impacto nas articulações e mais liberdade de movimento.'],
+  ['users','Especialidades no mesmo lugar','Fisioterapia, terapia ocupacional, nutrição e outras áreas no mesmo endereço.'],
+  ['clock','Experiência desde 2004','Mais de duas décadas de atuação em Itapuã, junto à comunidade de Vila Velha.'],
+  ['heart','Atenção individual','Cada plano de cuidado parte da sua história, do seu objetivo e do seu ritmo.']
+];
+function Diferenciais(){ return html`<section className="pad" id="diferenciais"><div className="wrap"><div className="dif">
+  <div className="collage" data-reveal="up">
+    <div className="col-main"><${Img} className="lp-px" parallax="0.05" src="img/fisio-3.jpg" alt="Mãos de uma fisioterapeuta aplicando terapia manual nas costas de um paciente" /></div>
+    <div className="col-sm"><${Img} className="lp-cover" src="img/fisio-2.jpg" alt="Fisioterapeuta avaliando o movimento do ombro de uma paciente" /></div>
+    <div className="stat"><b data-count="20" data-suffix="+">20+</b><span>anos de atuação</span></div>
+  </div>
+  <div>
+    <span className="eb" data-reveal>Por que a Vila Fisio</span>
+    <h2 data-split>Mais do que sessões: um <span className="a">cuidado</span> que acompanha você</h2>
+    <p className="lead" data-reveal>Reabilitar é um processo. Por isso, reunimos diferentes terapias para que você tenha apoio em cada etapa, sem correr de um lugar para outro.</p>
+    <div className="cards" data-stagger>
+      ${DIF.map(function(x,i){ return html`<div key=${i}><div className="card"><div className="ib"><${Ico} name=${x[0]} size=${26} sw=${1.7} /></div><h3>${x[1]}</h3><p>${x[2]}</p></div></div>`; })}
+    </div>
+  </div></div></div></section>`; }
+
+function Servicos(){
+  var q = function(t){ return LP.wa('Olá! Gostaria de saber mais sobre ' + t + ' na Vila Fisio.'); };
+  return html`<section className="pad srv" id="servicos"><div className="wrap">
+  <div className="srv-head"><div><span className="eb" data-reveal>Nossos serviços</span><h2 data-split>Seis caminhos para<br/>cuidar do seu <span className="a">corpo</span></h2></div>
+  <p className="lead" data-reveal>Toque em um serviço para falar direto com a gente pelo WhatsApp.</p></div>
+  <div className="bento" data-stagger>
+    <div><a className="sv img" href=${q('fisioterapia')} target="_blank" rel="noopener"><${Img} src="img/fisio-1.jpg" alt="Fisioterapeuta mobilizando o joelho de um paciente deitado" /><h3>Fisioterapia</h3><p>Avaliação e tratamento para recuperar movimento, reduzir desconfortos e ganhar autonomia no dia a dia.</p><span className="go">Saber mais <${Ico} name="arrow" size=${16} sw=${2.2} /></span></a></div>
+    <div><a className="sv hy" href=${q('hidroterapia')} target="_blank" rel="noopener"><span className="tag">Destaque</span><${Ico} className="big" name="drop" size=${40} sw=${1.5} /><h3>Hidroterapia</h3><p>Terapia aquática para trabalhar o corpo com leveza.</p><span className="go">Saber mais <${Ico} name="arrow" size=${16} sw=${2.2} /></span><${Waves} fill="rgba(143,224,232,.28)" /></a></div>
+    <div><a className="sv img" href=${q('terapia ocupacional')} target="_blank" rel="noopener"><${Img} src="img/fisio-6.jpg" alt="Terapeuta orientando o movimento do punho de uma paciente com halteres leves" /><h3>Terapia ocupacional</h3><p>Apoio para retomar tarefas e rotinas com mais independência.</p><span className="go">Saber mais <${Ico} name="arrow" size=${16} sw=${2.2} /></span></a></div>
+    <div><a className="sv img" href=${q('condicionamento físico')} target="_blank" rel="noopener"><${Img} src="img/fisio-5.jpg" alt="Mãos segurando halteres leves durante exercício de fortalecimento" /><h3>Condicionamento físico</h3><p>Fortalecimento e preparo do corpo para manter os ganhos da reabilitação.</p><span className="go">Saber mais <${Ico} name="arrow" size=${16} sw=${2.2} /></span></a></div>
+    <div><a className="sv ic" href=${q('nutrição')} target="_blank" rel="noopener"><div className="ib"><${Ico} name="leaf" size=${24} /></div><h3>Nutrição</h3><p>Orientação alimentar que complementa o seu tratamento.</p><span className="go">Saber mais <${Ico} name="arrow" size=${16} sw=${2.2} /></span></a></div>
+    <div><a className="sv ic" href=${q('acupuntura')} target="_blank" rel="noopener"><div className="ib"><${Ico} name="spark" size=${24} /></div><h3>Acupuntura</h3><p>Mais uma opção de cuidado para o seu bem-estar.</p><span className="go">Saber mais <${Ico} name="arrow" size=${16} sw=${2.2} /></span></a></div>
+  </div></div></section>`; }
+
+function Hidro(){ return html`<section className="hyd" id="hidroterapia"><${Waves} top=${true} fill="#dcf0f3" />
+  <div className="wrap" style=${{paddingTop:'clamp(4rem,9vw,7rem)',paddingBottom:'clamp(3rem,7vw,5rem)'}}><div className="hyd-grid">
+  <div>
+    <span className="eb" data-reveal>Terapia aquática</span>
+    <h2 data-split>Na água, o movimento fica mais <span className="a">leve</span></h2>
+    <p className="lead" data-reveal>A hidroterapia usa as propriedades da água para tornar o exercício mais confortável e seguro. Uma forma diferente de se reabilitar, com acompanhamento profissional.</p>
+    <ul className="checks" data-stagger>
+      <li><span className="ck"><${Ico} name="check" size=${15} sw=${3} /></span><span>Menos impacto nas articulações durante os exercícios</span></li>
+      <li><span className="ck"><${Ico} name="check" size=${15} sw=${3} /></span><span>Resistência natural da água para trabalhar a musculatura</span></li>
+      <li><span className="ck"><${Ico} name="check" size=${15} sw=${3} /></span><span>Indicação conforme a avaliação de cada pessoa</span></li>
+    </ul>
+    <div data-reveal><${WaButton} className="light" msg=${'Olá! Quero saber mais sobre a hidroterapia (terapia aquática) da Vila Fisio.'}>Quero conhecer a hidroterapia<//></div>
+  </div>
+  <div className="blob" data-reveal="zoom">
+    <div className="shape"><${Img} className="lp-cover" src="img/fisio-7.jpg" alt="Terapeuta aplicando técnica manual nos ombros de uma paciente, em ambiente de tons azulados" /></div>
+    <span className="bub" style=${{left:'8%',width:'18px',height:'18px',animationDelay:'0s'}}></span>
+    <span className="bub" style=${{left:'92%',width:'26px',height:'26px',animationDelay:'-2.5s'}}></span>
+    <span className="bub" style=${{left:'80%',width:'12px',height:'12px',animationDelay:'-4.5s'}}></span>
+    <span className="bub" style=${{left:'-2%',width:'30px',height:'30px',animationDelay:'-1.2s'}}></span>
+  </div></div></div>
+  <${Waves} fill="#dcf0f3" /></section>`; }
+
+var STEPS = [
+  ['Fale com a gente','Chame no WhatsApp ou ligue para a recepção e conte o que você precisa.'],
+  ['Avaliação','Uma conversa e avaliação para entender o seu caso, o seu objetivo e o seu momento.'],
+  ['Plano de cuidado','A equipe indica as terapias mais adequadas para você e acompanha a sua evolução.']
+];
+function Comecar(){ return html`<section className="pad" id="comecar" style=${{background:'#dcf0f3'}}><div className="wrap"><div className="go-grid">
+  <div className="go-img" data-reveal="up"><${Img} className="lp-px" parallax="0.05" src="img/fisio-4.jpg" alt="Paciente em alongamento sobre uma toalha azul, com apoio das mãos de um fisioterapeuta" /></div>
+  <div>
+    <span className="eb" data-reveal>Como começar</span>
+    <h2 data-split>O primeiro passo é <span className="a">simples</span></h2>
+    <div className="steps" data-stagger>
+      ${STEPS.map(function(s,i){ return html`<div className="step" key=${i}><div className="n">${i+1}</div><div><h3>${s[0]}</h3><p>${s[1]}</p></div></div>`; })}
+    </div>
+    <div data-reveal><${WaButton} msg=${MSG}>Agendar avaliação<//></div>
+  </div></div></div></section>`; }
+
+var TST = [
+  ['“Comecei a hidroterapia com receio e saí da primeira sessão me sentindo bem mais solto. A equipe explica tudo com paciência.”','Paciente · Itapuã'],
+  ['“Gostei de resolver fisioterapia e nutrição no mesmo lugar. Facilita muito a minha rotina.”','Paciente · Praia da Costa'],
+  ['“Atendimento acolhedor desde a ligação. Me senti ouvida e acompanhada em cada etapa do tratamento.”','Paciente · Itaparica']
+];
+function Prova(){ return html`<section className="pad tst" id="depoimentos" style=${{background:'#e8f4f6'}}><div className="wrap">
+  <div className="tst-head"><div><span className="eb" data-reveal>Prova social</span><h2 data-split>Quem cuida, <span className="a">percebe</span> a diferença</h2></div><span className="il" data-reveal>Depoimentos ilustrativos</span></div>
+  <div className="q" data-stagger>
+    ${TST.map(function(t,i){ return html`<div key=${i}><figure><span className="mk" aria-hidden="true">“</span><div className="st" aria-label="5 de 5 estrelas" role="img">${[0,1,2,3,4].map(function(k){ return html`<${Ico} key=${k} name="star" size=${16} sw=${1.5} />`; })}</div><blockquote>${t[0]}</blockquote><figcaption>${t[1]}</figcaption></figure></div>`; })}
+  </div></div></section>`; }
+
+function Final(){ return html`<section className="final" id="contato"><${Waves} top=${true} fill="#e8f4f6" /><div className="wrap">
+  <h2 data-split>Seu corpo merece <span className="a">cuidado</span> de verdade.</h2>
+  <p data-reveal>Fale com a Vila Fisio e agende uma avaliação. Atendimento por WhatsApp ou telefone.</p>
+  <div className="cta-row" data-reveal="zoom"><${WaButton} className="light" msg=${MSG}>Falar no WhatsApp<//><a className="lp-btn ghost-l" href="tel:+552732297927"><${Ico} name="phone" size=${18} /> <span>Ligar ${TEL1}</span></a></div>
+  </div></section>`; }
+
+function Footer(){ return html`<footer><div className="wrap"><div className="fg">
+  <div><div className="logo"><i className="ic"><${Ico} name="drop" size=${18} sw=${2} /></i><span>Vila Fisio<small>Centro de Reabilitação e Terapia Aquática · CIRTA</small></span></div>
+    <p style=${{maxWidth:'36ch',lineHeight:1.7}}>Fisioterapia, terapia ocupacional, hidroterapia, nutrição, acupuntura e condicionamento físico em Itapuã, Vila Velha. Em operação desde 2004.</p></div>
+  <div><h4>Contato</h4><ul>
+    <li><${Ico} name="phone" size=${18} /><span><a href="tel:+552732297927">${TEL1}</a><br/><a href="tel:+552730626927">${TEL2}</a></span></li>
+    <li><${Ico} name="wa" size=${18} /><span>WhatsApp para agendamentos</span></li></ul></div>
+  <div><h4>Onde estamos</h4><ul>
+    <li><${Ico} name="pin" size=${18} /><span>Rua Porto Alegre, 8 · Itapuã<br/>Vila Velha/ES · CEP 29101-680<br/><a href=${MAPS} target="_blank" rel="noopener">Ver no mapa</a></span></li>
+    <li><${Ico} name="clock" size=${18} /><span>Horários: consulte pelo WhatsApp ou telefone</span></li></ul></div></div>
+  <p className="cp">© Vila Fisio (CIRTA). Prévia de demonstração — layout e textos ilustrativos.</p></div></footer>`; }
+
+function Page(){ return html`<main><${Nav} /><${Hero} /><div className="mq"><${Marquee} items=${['Fisioterapia','Hidroterapia','Terapia ocupacional','Nutrição','Acupuntura','Condicionamento físico']} speed=${30} /></div><${Diferenciais} /><${Servicos} /><${Hidro} /><${Comecar} /><${Prova} /><${Final} /><${Footer} /></main>`; }
+
+LP.mount(Page, { empresa:'Vila Fisio', whatsapp:'552732297927', mensagem:MSG, intro:{ title:'Vila Fisio', sub:'Reabilitação · Terapia aquática' }, introMs:1900 });
+})();
+</script>
+</body>
+</html>

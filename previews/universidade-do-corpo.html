@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Universidade do Corpo — Academia em Itapoã, Vila Velha | Prévia de site</title>
+<meta name="description" content="Prévia de site para a Academia Universidade do Corpo, em Itapoã, Vila Velha (ES).">
+<meta property="og:title" content="Universidade do Corpo — Treine como se importasse">
+<meta property="og:description" content="Prévia de site criada para a Academia Universidade do Corpo, Vila Velha (ES).">
+<meta property="og:image" content="img/gym-4.jpg">
+<meta name="theme-color" content="#050505">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/kit.css">
+<style>
+:root{--bg:#050505;--fg:#f4f4f2;--accent:#c6ff1a;--on-accent:#050505;--g1:#101010;--g2:#1a1a1a;--intro-bg:#050505;--intro-fg:#f4f4f2;--intro-ls:.01em;
+--font-display:'Anton',Impact,sans-serif;--font-body:'Space Grotesk',system-ui,sans-serif}
+.wrap{width:min(1280px,calc(100% - 48px));margin-inline:auto}
+.lp-btn{border-radius:0;text-transform:uppercase;letter-spacing:.08em;font-weight:700;font-size:.9rem}
+.nav{position:fixed;inset:0 0 auto 0;z-index:800;padding:1.1rem 0;transition:.35s;mix-blend-mode:normal}
+.nav.scrolled{background:rgba(5,5,5,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:.7rem 0}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.logo{font-family:var(--font-display);font-size:1.4rem;text-transform:uppercase;letter-spacing:.03em;display:flex;align-items:center;gap:.6rem}
+.logo i{width:12px;height:12px;background:var(--accent);display:inline-block;transform:rotate(45deg)}
+.nav ul{display:flex;gap:2rem;font-weight:600;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase}
+.nav ul a{opacity:.7;transition:.3s}.nav ul a:hover{opacity:1;color:var(--accent)}
+.nav .lp-btn{padding:.7rem 1.2rem}
+@media(max-width:860px){.nav ul{display:none}}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;--mx:70%;--my:40%}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{filter:grayscale(1) contrast(1.15)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(500px circle at var(--mx) var(--my),rgba(198,255,26,.18),transparent 60%),linear-gradient(0deg,#050505 4%,rgba(5,5,5,.35) 55%,rgba(5,5,5,.75))}
+.hero-in{position:relative;z-index:2;padding-bottom:clamp(3rem,8vh,5.5rem)}
+.hero h1{font-family:var(--font-display);font-weight:400;text-transform:uppercase;font-size:clamp(3.4rem,13.4vw,13rem);line-height:.86;letter-spacing:-.005em}
+.hero h1 .o{color:transparent;-webkit-text-stroke:2px var(--fg)}
+.hero h1 .a{color:var(--accent)}
+.hero-row{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-top:2rem;border-top:1px solid rgba(255,255,255,.2);padding-top:1.6rem}
+.hero-row p{max-width:44ch;line-height:1.6;opacity:.8;font-size:1.05rem}
+.eb{font-weight:700;letter-spacing:.24em;text-transform:uppercase;font-size:.78rem;color:var(--accent);margin-bottom:1rem;display:block}
+.mq{background:var(--accent);color:#050505;font-family:var(--font-display);text-transform:uppercase;font-size:clamp(1.5rem,3.4vw,2.6rem);padding:.7rem 0}
+section{position:relative}
+.pad{padding:clamp(4.5rem,10vw,8rem) 0}
+h2{font-family:var(--font-display);font-weight:400;text-transform:uppercase;font-size:clamp(2.8rem,8vw,7rem);line-height:.92}
+h2 .o{color:transparent;-webkit-text-stroke:2px var(--fg)}
+h2 .a{color:var(--accent)}
+/* horizontal */
+.hs{height:100svh;background:var(--g1);overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.hs-head{padding:0 max(24px,calc((100vw - 1280px)/2));margin-bottom:2.2rem;display:flex;justify-content:space-between;align-items:flex-end;gap:2rem}
+.hs-head p{max-width:34ch;opacity:.7;line-height:1.6}
+.track{display:flex;gap:1.4rem;padding:0 max(24px,calc((100vw - 1280px)/2));width:max-content;will-change:transform}
+.pan{width:min(78vw,520px);height:min(58vh,520px);position:relative;overflow:hidden;flex:none;background:#000;border:1px solid rgba(255,255,255,.12)}
+.pan img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:filter .6s,transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.pan:hover img{filter:grayscale(0);transform:scale(1.07)}
+.pan::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.92),transparent 60%)}
+.pan .t{position:absolute;left:1.6rem;right:1.6rem;bottom:1.5rem;z-index:2}
+.pan .n{font-family:var(--font-display);color:var(--accent);font-size:1.2rem}
+.pan h3{font-family:var(--font-display);font-weight:400;font-size:clamp(2rem,4vw,3rem);text-transform:uppercase;line-height:1;margin:.3rem 0 .5rem}
+.pan p{font-size:.95rem;line-height:1.5;opacity:.8;max-width:34ch}
+.pan.cta-p{background:var(--accent);color:#050505;display:grid;place-items:center;text-align:center}
+.pan.cta-p::after{display:none}
+.pan.cta-p h3{font-size:clamp(2.2rem,4.4vw,3.6rem)}
+.pan.cta-p .lp-btn{background:#050505;color:var(--accent);margin-top:1.2rem}
+/* manifesto */
+.mani{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.mani p{line-height:1.75;font-size:1.15rem;opacity:.8;margin-top:1.6rem;max-width:46ch}
+.mani-img{position:relative;aspect-ratio:4/5;overflow:hidden}
+.mani-img img{filter:grayscale(1) contrast(1.1)}
+.mani-img::before{content:"";position:absolute;inset:auto -1px -1px auto;width:42%;height:30%;background:var(--accent);z-index:2}
+@media(max-width:860px){.mani{grid-template-columns:1fr}}
+.perks{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#2a2a2a;border:1px solid #2a2a2a;margin-top:3.4rem}
+.perk{background:var(--bg);padding:2rem 1.5rem;min-height:210px;position:relative;overflow:hidden;--mx:50%;--my:50%}
+.perk::before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx) var(--my),rgba(198,255,26,.16),transparent 65%);opacity:0;transition:opacity .4s}
+.perk:hover::before{opacity:1}
+.perk svg{color:var(--accent);position:relative}
+.perk h3{font-family:var(--font-display);font-weight:400;text-transform:uppercase;font-size:1.6rem;margin:1.2rem 0 .4rem;position:relative}
+.perk p{opacity:.7;line-height:1.55;font-size:.95rem;position:relative}
+@media(max-width:900px){.perks{grid-template-columns:1fr 1fr}}@media(max-width:520px){.perks{grid-template-columns:1fr}}
+.week{background:var(--g1)}
+.days{display:grid;grid-template-columns:repeat(6,1fr);gap:.7rem;margin-top:2.6rem}
+.day{border:1px solid #333;padding:1.2rem .9rem;transition:.35s;text-align:center}
+.day:hover{background:var(--accent);color:#050505;border-color:var(--accent);transform:translateY(-6px)}
+.day b{font-family:var(--font-display);font-weight:400;font-size:1.7rem;display:block;text-transform:uppercase}
+.day span{font-size:.78rem;opacity:.7;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:820px){.days{grid-template-columns:repeat(3,1fr)}}
+.q{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:3rem}
+.q figure{margin:0;border:1px solid #2a2a2a;padding:2rem}
+.q p{line-height:1.6;font-size:1.1rem}
+.q figcaption{margin-top:1.2rem;color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+@media(max-width:900px){.q{grid-template-columns:1fr}}
+.final{background:var(--accent);color:#050505;text-align:center;overflow:hidden}
+.final h2{font-size:clamp(3.2rem,12vw,11rem)}
+.final h2 .o{-webkit-text-stroke:2px #050505}
+.final p{font-weight:600;max-width:40ch;margin:1.2rem auto 2rem;font-size:1.15rem}
+.final .lp-btn{background:#050505;color:var(--accent);padding:1.2rem 2.4rem;font-size:1rem}
+footer{padding:3.4rem 0 6rem;background:#000;color:rgba(244,244,242,.7)}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:3rem}
+footer h4{font-family:var(--font-display);font-weight:400;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);font-size:1.2rem;margin-bottom:1rem}
+footer li{display:flex;gap:.7rem;margin-bottom:.7rem;line-height:1.5}footer li svg{flex:none;color:var(--accent);margin-top:3px}
+.cp{margin-top:2.4rem;font-size:.8rem;opacity:.55}
+@media(max-width:760px){.fg{grid-template-columns:1fr;gap:2rem}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="vendor/react.production.min.js"></script>
+<script src="vendor/react-dom.production.min.js"></script>
+<script src="vendor/htm.umd.js"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="shared/kit.js"></script>
+<script>
+(function(){
+var LP = window.LP, html = LP.html, Ico = LP.Ico, Img = LP.Img, WaButton = LP.WaButton, Marquee = LP.Marquee;
+var MSG = 'Olá! Vi o site da Universidade do Corpo e quero agendar uma aula experimental.';
+
+function Nav(){ return html`<nav className="nav"><div className="wrap"><a href="#inicio" className="logo"><i></i>Universidade do Corpo</a>
+  <ul><li><a href="#treinos">Treinos</a></li><li><a href="#diferenciais">Diferenciais</a></li><li><a href="#semana">Semana</a></li><li><a href="#contato">Contato</a></li></ul>
+  <${WaButton} magnetic=${false} msg=${MSG}>Aula experimental<//></div></nav>`; }
+
+function Hero(){ return html`<header className="hero" id="inicio" data-spot>
+  <div className="hero-bg"><${Img} className="lp-cover" src="img/gym-4.jpg" alt="Academia" eager=${true} kb=${true} /></div>
+  <div className="wrap hero-in">
+    <span className="eb" data-hero-in>Academia · Itapoã, Vila Velha</span>
+    <h1 data-split data-hero>Treine com<br/><span className="a">propósito.</span><br/><span className="o">Evolua.</span></h1>
+    <div className="hero-row" data-hero-in><p>Estrutura completa de musculação e acompanhamento de perto para você sair do lugar — seja qual for o seu ponto de partida.</p>
+    <${WaButton} msg=${MSG}>Quero treinar<//></div>
+  </div></header>`; }
+
+var PAN = [
+  ['Musculação','Equipamentos para ganhar força, massa e definição, com orientação para cada objetivo.','img/gym-1.jpg'],
+  ['Treino guiado','Acompanhamento próximo para executar certo, evitar lesões e evoluir com segurança.','img/gym-5.jpg'],
+  ['Força livre','Barras, anilhas e halteres para quem leva o treino a sério.','img/gym-3.jpg'],
+  ['Ambiente','Espaço para treinar com foco, energia e motivação todos os dias.','img/gym-8.jpg']
+];
+function Treinos(){ return html`<section className="hs" id="treinos" data-hscroll>
+  <div className="hs-head"><h2>Seu <span className="a">treino</span>,<br/>seu <span className="o">ritmo</span></h2><p>Role para conhecer o que a Universidade do Corpo oferece.</p></div>
+  <div className="track" data-track>
+    ${PAN.map(function(p,i){ return html`<article className="pan" key=${i}><${Img} src=${p[2]} alt=${p[0]} /><div className="t"><span className="n">0${i+1}</span><h3>${p[0]}</h3><p>${p[1]}</p></div></article>`; })}
+    <article className="pan cta-p"><div><h3>Venha<br/>treinar</h3><p style=${{fontWeight:600}}>Agende sua aula experimental.</p><${WaButton} msg=${MSG}>Agendar agora<//></div></article>
+  </div></section>`; }
+
+function Mani(){ return html`<section className="pad" id="diferenciais"><div className="wrap">
+  <div className="mani"><div><span className="eb" data-reveal>Manifesto</span><h2 data-split>Corpo forte.<br/><span className="a">Mente</span> <span className="o">firme.</span></h2>
+  <p data-reveal>Aqui o treino é mais que repetição: é rotina, disciplina e resultado. Uma academia pensada para quem quer evoluir de verdade, com respeito ao seu tempo e ao seu objetivo.</p></div>
+  <div className="mani-img" data-reveal="mask"><${Img} className="lp-px" parallax="0.07" src="img/gym-2.jpg" alt="Halteres" /></div></div>
+  <div className="perks" data-stagger>
+   ${[['dumbbell','Equipamentos','Aparelhos e pesos livres para todos os grupos musculares.'],['users','Acompanhamento','Orientação para você treinar com técnica e segurança.'],['bolt','Energia','Ambiente que puxa você para cima, sem pressão.'],['calendar','Flexibilidade','Horários para encaixar o treino na sua rotina.']].map(function(x,i){ return html`<div className="perk" key=${i} data-spot><${Ico} name=${x[0]} size=${36} sw=${1.5} /><h3>${x[1]}</h3><p>${x[2]}</p></div>`; })}
+  </div></div></section>`; }
+
+function Semana(){ var d=['SEG','TER','QUA','QUI','SEX','SÁB']; return html`<section className="pad week" id="semana"><div className="wrap">
+  <span className="eb" data-reveal>Rotina</span><h2 data-split>Todo dia é dia de <span className="a">evoluir</span></h2>
+  <div className="days" data-stagger>${d.map(function(x,i){ return html`<div className="day" key=${i}><b>${x}</b><span>Consulte horários</span></div>`; })}</div>
+  <div className="q" data-stagger>
+    <figure><p>“Comecei do zero e hoje não passo uma semana sem treinar. Ambiente bom e gente que incentiva.”</p><figcaption>Aluno · Itapoã</figcaption></figure>
+    <figure><p>“Estrutura completa e instrutores atentos. Sinto que evoluo de verdade a cada mês.”</p><figcaption>Aluna · Praia da Costa</figcaption></figure>
+    <figure><p>“Valeu muito a aula experimental. Fui bem recebido e já saí com treino montado.”</p><figcaption>Aluno · Vila Velha</figcaption></figure>
+  </div></div></section>`; }
+
+function Final(){ return html`<section className="pad final" id="contato"><div className="wrap"><h2 data-split>Bora <span className="o">começar?</span></h2><p data-reveal>Chame no WhatsApp e agende sua aula experimental.</p><div data-reveal="zoom"><${WaButton} msg=${MSG}>Falar no WhatsApp<//></div></div></section>`; }
+
+function Footer(){ return html`<footer><div className="wrap"><div className="fg">
+  <div><div className="logo" style=${{marginBottom:'1rem',color:'#fff'}}><i></i>Universidade do Corpo</div><p style=${{maxWidth:'34ch',lineHeight:1.7}}>Academia em Itapoã, Vila Velha. Treino com foco e acompanhamento.</p></div>
+  <div><h4>Contato</h4><ul><li><${Ico} name="phone" size=${18} /> (27) 99294-4034</li><li><${Ico} name="wa" size=${18} /> WhatsApp para matrículas</li></ul></div>
+  <div><h4>Onde estamos</h4><ul><li><${Ico} name="pin" size=${18} /> Rua Doutor Jair Andrade, 364<br/>Praia de Itapoã · Vila Velha/ES</li><li><${Ico} name="clock" size=${18} /> Horários: consulte pelo WhatsApp</li></ul></div></div>
+  <p className="cp">© Universidade do Corpo. Prévia de demonstração — layout e textos ilustrativos.</p></div></footer>`; }
+
+function Page(){ return html`<main><${Nav} /><${Hero} /><div className="mq"><${Marquee} items=${['Musculação','Treino guiado','Força','Disciplina','Evolução','Resultado']} speed=${24} /></div><${Treinos} /><${Mani} /><${Semana} /><${Final} /><${Footer} /></main>`; }
+
+LP.mount(Page, { empresa:'Universidade do Corpo', whatsapp:'5527992944034', mensagem:MSG, intro:{ title:'UNIVERSIDADE DO CORPO', sub:'Academia · Itapoã' }, introMs:1900 });
+})();
+</script>
+</body>
+</html>

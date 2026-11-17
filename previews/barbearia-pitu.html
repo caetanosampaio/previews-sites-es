@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barbearia Pitu — Barbearia em Santa Mônica, Vila Velha | Prévia de site</title>
+<meta name="description" content="Prévia de site para a Barbearia Pitu, em Santa Mônica, Vila Velha (ES). Corte masculino, barba, acabamento e sobrancelha com agendamento pelo WhatsApp.">
+<meta property="og:title" content="Barbearia Pitu — Corte afiado. Barba de respeito.">
+<meta property="og:description" content="Prévia de site criada para a Barbearia Pitu, Santa Mônica, Vila Velha (ES).">
+<meta property="og:image" content="img/est-9.jpg">
+<meta name="theme-color" content="#17110d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/kit.css">
+<style>
+:root{--bg:#17110d;--bg2:#1f1610;--bg3:#2a1e16;--fg:#f2e8d5;--muted:rgba(242,232,213,.74);--accent:#d98c4c;--copper2:#eab27a;--cream:#f2e8d5;--paper:#e9dcc2;--ink:#1b130d;--copper-ink:#8f4a17;--line:rgba(217,140,76,.38);--on-accent:#17110d;--intro-bg:#17110d;--intro-fg:#f2e8d5;--intro-ls:.12em;
+--pole-r:#a8382c;--pole-b:#2f4d70;
+--font-display:'Oswald','Arial Narrow',Impact,sans-serif;--font-body:'Libre Baskerville',Georgia,serif}
+html{scroll-padding-top:70px}
+body{line-height:1.7}
+/* grão de filme sobre toda a página */
+body::before{content:"";position:fixed;inset:0;z-index:5;pointer-events:none;opacity:.07;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.wrap{width:min(1200px,calc(100% - 48px));margin-inline:auto}
+section{position:relative}
+.pad{padding:clamp(4.5rem,10vw,8rem) 0}
+.lp-btn{border-radius:2px;font-family:var(--font-display);text-transform:uppercase;letter-spacing:.12em;font-weight:600;font-size:.95rem;padding:1rem 1.5rem}
+.ghost{display:inline-flex;align-items:center;gap:.6rem;padding:1rem 1.4rem;border:1px solid var(--line);border-radius:2px;font-family:var(--font-display);text-transform:uppercase;letter-spacing:.12em;font-weight:500;font-size:.95rem;transition:background .3s,color .3s,border-color .3s,transform .3s}
+.ghost:hover{background:var(--fg);color:var(--ink);border-color:var(--fg);transform:translateY(-3px)}
+.eb{display:inline-flex;align-items:center;gap:.8rem;font-family:var(--font-display);font-weight:500;letter-spacing:.3em;text-transform:uppercase;font-size:.82rem;color:var(--accent);margin-bottom:1.1rem}
+.eb::before{content:"";width:34px;height:1px;background:currentColor}
+h1,h2,h3{font-family:var(--font-display);text-transform:uppercase}
+h2{font-weight:600;font-size:clamp(2.2rem,6vw,4.6rem);line-height:1.02;letter-spacing:.005em}
+h1 em,h2 em{font-family:var(--font-body);font-style:italic;font-weight:400;text-transform:none;color:var(--accent);letter-spacing:0}
+.pole{height:10px;background:repeating-linear-gradient(-45deg,var(--pole-r) 0 12px,var(--cream) 12px 24px,var(--pole-b) 24px 36px,var(--cream) 36px 48px);background-size:68px 68px;animation:poleMove 6s linear infinite}
+@keyframes poleMove{to{background-position:68px 0}}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:800;padding:1.1rem 0;transition:background .4s,padding .4s,border-color .4s;border-bottom:1px solid transparent}
+.nav.scrolled{background:rgba(23,17,13,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:.65rem 0;border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{display:flex;align-items:center;gap:.7rem}
+.logo .emb{width:40px;height:40px;border-radius:50%;border:1px solid var(--accent);display:grid;place-items:center;color:var(--accent);flex:none;transition:transform .5s}
+.logo:hover .emb{transform:rotate(-20deg)}
+.logo span.t{display:flex;flex-direction:column;line-height:1}
+.logo b{font-family:var(--font-display);font-weight:700;font-size:1.55rem;letter-spacing:.14em;text-transform:uppercase}
+.logo small{font-family:var(--font-display);font-size:.62rem;letter-spacing:.42em;text-transform:uppercase;color:var(--accent);margin-bottom:.2rem}
+.nav ul{display:flex;gap:2.2rem;font-family:var(--font-display);text-transform:uppercase;letter-spacing:.16em;font-size:.88rem;font-weight:500}
+.nav ul a{opacity:.8;transition:.3s;padding:.4rem 0;border-bottom:1px solid transparent}
+.nav ul a:hover{opacity:1;color:var(--copper2);border-color:var(--accent)}
+.nav .lp-btn{padding:.75rem 1.2rem;font-size:.85rem}
+@media(max-width:860px){.nav ul{display:none}}
+@media(max-width:400px){.logo b{font-size:1.3rem}.nav .lp-btn{padding:.7rem .9rem;letter-spacing:.08em}.logo .emb{width:34px;height:34px}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;padding:7rem 0 4rem;background:radial-gradient(900px circle at 82% 28%,rgba(217,140,76,.2),transparent 62%),radial-gradient(700px circle at 0% 100%,rgba(168,56,44,.14),transparent 60%),var(--bg)}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+.hero h1{font-weight:600;font-size:clamp(2.9rem,8vw,6.2rem);line-height:1;letter-spacing:.01em}
+.hero h1 em{font-size:.82em}
+.hero .lead{max-width:46ch;margin-top:1.6rem;font-size:clamp(.98rem,1.5vw,1.12rem);color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.2rem;align-items:center}
+.facts{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin-top:2.4rem;padding-top:1.4rem;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted)}
+.facts li{display:flex;align-items:center;gap:.55rem}
+.facts svg{color:var(--accent);flex:none}
+.art{position:relative;width:100%;max-width:460px;margin-inline:auto}
+.art::before{content:"";position:absolute;inset:-14px -14px 14px 14px;border:1px solid var(--line);border-radius:999px 999px 4px 4px}
+.arch{position:relative;aspect-ratio:4/5;border-radius:999px 999px 4px 4px;overflow:hidden;background:var(--bg3)}
+.arch img{filter:sepia(.22) contrast(1.05) saturate(.92);object-position:50% 40%}
+.arch::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(23,17,13,.55),transparent 40%);pointer-events:none}
+.seal{position:absolute;left:-46px;bottom:34px;width:132px;height:132px;z-index:3;color:var(--cream);filter:drop-shadow(0 8px 18px rgba(0,0,0,.5))}
+.seal .disc{position:absolute;inset:0;border-radius:50%;background:var(--ink);border:1px solid var(--accent)}
+.seal svg.ring{position:absolute;inset:0;width:100%;height:100%;animation:spin 30s linear infinite}
+.seal .mid{position:absolute;inset:34px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--accent)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.art{max-width:380px;margin-top:1rem}.seal{left:-10px;width:104px;height:104px}.seal .mid{inset:27px}}
+
+/* faixa */
+.band{background:var(--cream);color:var(--ink);font-family:var(--font-display);text-transform:uppercase;letter-spacing:.08em;font-weight:600;font-size:clamp(1.2rem,2.8vw,2rem);padding:.85rem 0}
+.razor{display:flex;align-items:center;gap:1rem;color:var(--accent);max-width:520px;margin:0 auto 2.6rem}
+.razor i{flex:1;height:1px;background:linear-gradient(90deg,transparent,currentColor)}
+.razor i:last-child{background:linear-gradient(270deg,transparent,currentColor)}
+.razor svg{flex:none}
+
+/* serviços */
+.sv{background:var(--bg2)}
+.sv-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,5rem);align-items:start}
+.sv-media{position:sticky;top:96px;aspect-ratio:4/5;overflow:hidden;border:1px solid var(--line);border-radius:3px;background:var(--bg3)}
+.sv-media .sv-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .7s,transform 1.4s cubic-bezier(.2,.8,.2,1);filter:sepia(.2) contrast(1.05)}
+.sv-media .sv-img.on{opacity:1;transform:scale(1)}
+.sv-media::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(23,17,13,.7),transparent 45%);pointer-events:none}
+.sv-tag{position:absolute;left:1.2rem;bottom:1rem;z-index:2;font-family:var(--font-display);font-size:3.4rem;line-height:1;font-weight:700;color:var(--accent)}
+.sv-list h2{margin-bottom:2rem}
+.sv-list ul{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:3.2rem 1fr auto;gap:1rem;align-items:center;padding:1.5rem .4rem;border-bottom:1px solid var(--line);transition:background .35s,padding .35s;cursor:default}
+.row .n{font-family:var(--font-display);font-size:1.3rem;color:var(--accent);opacity:.8}
+.row h3{font-weight:600;font-size:clamp(1.4rem,3vw,2rem);letter-spacing:.04em;line-height:1.1}
+.row p{margin-top:.4rem;color:var(--muted);font-size:.92rem;max-width:44ch}
+.row .go{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-display);text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;color:var(--copper2);padding:.7rem .4rem;white-space:nowrap}
+.row .go svg{transition:transform .3s}
+.row.on{background:linear-gradient(90deg,rgba(217,140,76,.12),transparent);padding-left:1rem}
+.row.on .go svg,.row .go:hover svg{transform:translateX(5px)}
+@media(max-width:900px){.sv-grid{grid-template-columns:1fr}.sv-media{position:relative;top:0;aspect-ratio:16/10}.sv-tag{font-size:2.6rem}}
+@media(max-width:560px){.row{grid-template-columns:2.4rem 1fr;}.row .go{grid-column:2;justify-self:start;padding-left:0}}
+
+/* diferenciais (papel) */
+.why{background:var(--cream);color:var(--ink)}
+.why .eb{color:var(--copper-ink)}
+.why h2 em{color:var(--copper-ink)}
+.why-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-bottom:3rem}
+.why-head p{max-width:40ch;opacity:.8}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.card{position:relative;height:100%;background:var(--paper);border:1px solid rgba(27,19,13,.2);padding:2rem 1.5rem 1.8rem;overflow:hidden;transition:transform .45s cubic-bezier(.2,.8,.2,1),background .4s,color .4s,box-shadow .4s}
+.card::before,.card::after{content:"";position:absolute;width:18px;height:18px;border:2px solid var(--copper-ink);transition:border-color .4s}
+.card::before{top:10px;left:10px;border-right:0;border-bottom:0}
+.card::after{right:10px;bottom:10px;border-left:0;border-top:0}
+.card:hover{transform:translateY(-10px);background:var(--ink);color:var(--cream);box-shadow:0 26px 50px -22px rgba(27,19,13,.7)}
+.card:hover::before,.card:hover::after{border-color:var(--accent)}
+.card .num{font-family:var(--font-display);font-size:3.2rem;font-weight:700;line-height:1;color:var(--copper-ink);opacity:.9;transition:color .4s}
+.card:hover .num{color:var(--accent)}
+.card h3{font-weight:600;font-size:1.45rem;letter-spacing:.05em;margin:.8rem 0 .6rem}
+.card p{font-size:.92rem;opacity:.85}
+.card svg{margin-bottom:.4rem;color:var(--copper-ink);transition:color .4s}
+.card:hover svg{color:var(--accent)}
+@media(max-width:1000px){.why-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.why-grid{grid-template-columns:1fr}}
+
+/* ambiente */
+.amb{background:var(--bg)}
+.amb-head{text-align:center;max-width:760px;margin:0 auto 3rem}
+.amb-head p{color:var(--muted);margin-top:1.1rem}
+.mosaic{display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:170px;gap:.8rem}
+.gi{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:3px;background:var(--bg3)}
+.gi img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:sepia(.15) contrast(1.04);transition:transform 1.2s cubic-bezier(.2,.8,.2,1),filter .6s}
+.gi:hover img{transform:scale(1.07);filter:none}
+.g1{grid-column:span 2}.g2,.g3{grid-row:span 2}.g4{grid-column:span 2}
+.note{margin-top:1.4rem;text-align:center;font-size:.78rem;color:var(--muted);font-style:italic}
+@media(min-width:800px){.mosaic{grid-template-columns:1.5fr 1fr 1fr;grid-auto-rows:270px}.g1{grid-column:1;grid-row:span 2}.g2{grid-column:2;grid-row:span 2}.g3{grid-column:3;grid-row:1}.g4{grid-column:3;grid-row:2}}
+
+/* depoimentos */
+.rev{background:var(--bg3);overflow:hidden}
+.rev-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:1.4rem;margin-top:3rem}
+.rev-side{display:grid;gap:1.4rem}
+.tk{position:relative;background:var(--paper);color:var(--ink);padding:2rem 1.8rem 1.6rem;border-radius:3px;height:100%;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s;
+ -webkit-mask:radial-gradient(circle 9px at 0 50%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 9px at 100% 50%,#0000 98%,#000) right/51% 100% no-repeat;mask:radial-gradient(circle 9px at 0 50%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 9px at 100% 50%,#0000 98%,#000) right/51% 100% no-repeat}
+.tk:hover{transform:translateY(-6px)}
+.tk q{display:block;quotes:none;font-style:italic;font-size:1.05rem;line-height:1.7}
+.tk.big q{font-size:clamp(1.25rem,2.4vw,1.7rem);line-height:1.5}
+.tk .who{margin-top:1.3rem;padding-top:1rem;border-top:2px dashed rgba(27,19,13,.3);font-family:var(--font-display);text-transform:uppercase;letter-spacing:.16em;font-size:.8rem;color:var(--copper-ink);font-weight:600}
+.tk .mk{font-family:var(--font-display);font-size:4rem;line-height:.6;color:var(--copper-ink);display:block;height:1.6rem}
+@media(max-width:860px){.rev-grid{grid-template-columns:1fr}}
+
+/* chamada final */
+.final{background:var(--accent);color:var(--ink);text-align:center;overflow:hidden;padding-top:0}
+.final .pole{margin-bottom:clamp(3.5rem,8vw,6rem)}
+.final h2{font-size:clamp(2.6rem,9vw,7.2rem);font-weight:700;line-height:.98}
+.final h2 em{color:var(--ink)}
+.final p{max-width:44ch;margin:1.4rem auto 2.2rem;font-weight:700}
+.final .lp-btn{background:var(--ink);color:var(--cream);padding:1.15rem 2.2rem;font-size:1.02rem}
+.final .lp-btn:hover{box-shadow:0 14px 40px -10px rgba(27,19,13,.7)}
+.final .eb{color:var(--ink)}
+.final-pad{padding-bottom:clamp(4rem,9vw,7rem)}
+
+/* rodapé */
+footer{background:#0e0a07;color:rgba(242,232,213,.78);padding:4rem 0 6.5rem}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1.2fr;gap:3rem}
+footer h4{font-family:var(--font-display);font-weight:500;text-transform:uppercase;letter-spacing:.2em;color:var(--accent);font-size:.95rem;margin:0 0 1.1rem}
+footer li{display:flex;gap:.7rem;margin-bottom:.8rem;line-height:1.55;font-size:.95rem}
+footer li svg{flex:none;color:var(--accent);margin-top:4px}
+footer a:not(.lp-btn){text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+footer a:not(.lp-btn):hover{color:var(--copper2)}
+.fb{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.14em;font-weight:700;font-size:1.7rem;color:var(--fg)}
+.fb small{display:block;font-size:.66rem;letter-spacing:.42em;color:var(--accent);font-weight:500}
+.cp{margin-top:3rem;padding-top:1.4rem;border-top:1px solid var(--line);font-size:.8rem;opacity:.75}
+@media(max-width:820px){.fg{grid-template-columns:1fr;gap:2.2rem}}
+
+@media(prefers-reduced-motion:reduce){.pole,.seal svg.ring{animation:none}.sv-media .sv-img,.gi img,.card,.tk{transition:none}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="vendor/react.production.min.js"></script>
+<script src="vendor/react-dom.production.min.js"></script>
+<script src="vendor/htm.umd.js"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="shared/kit.js"></script>
+<script>
+(function(){
+var LP = window.LP, html = LP.html, Ico = LP.Ico, Img = LP.Img, WaButton = LP.WaButton, Marquee = LP.Marquee;
+var useState = LP.React.useState;
+var MSG = 'Olá! Vi o site da Barbearia Pitu e quero agendar um horário.';
+var MAPS = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Av. Olgamitho Rodrigues, 50, Santa Mônica, Vila Velha - ES, 29105-615');
+
+function Nav(){ return html`<nav className="nav"><div className="wrap">
+  <a href="#inicio" className="logo" aria-label="Barbearia Pitu, início"><span className="emb"><${Ico} name="scissors" size=${20} /></span><span className="t"><small>Barbearia</small><b>Pitu</b></span></a>
+  <ul><li><a href="#servicos">Serviços</a></li><li><a href="#diferenciais">Diferenciais</a></li><li><a href="#ambiente">Ambiente</a></li><li><a href="#contato">Contato</a></li></ul>
+  <${WaButton} magnetic=${false} msg=${MSG}>Agendar<//></div></nav>`; }
+
+function Seal(){ return html`<div className="seal" aria-hidden="true"><span className="disc"></span>
+  <svg className="ring" viewBox="0 0 200 200"><defs><path id="sealPath" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs>
+  <text fill="currentColor" fontFamily="Oswald, sans-serif" fontSize="15" letterSpacing="3" fontWeight="500"><textPath href="#sealPath" textLength="465" lengthAdjust="spacing">BARBEARIA PITU ✦ SANTA MÔNICA ✦ VILA VELHA ✦</textPath></text></svg>
+  <span className="mid"><${Ico} name="scissors" size=${26} sw=${1.6} /></span></div>`; }
+
+function Hero(){ return html`<header className="hero" id="inicio">
+  <div className="wrap hero-grid">
+    <div>
+      <span className="eb" data-hero-in>Santa Mônica · Vila Velha</span>
+      <h1 data-split data-hero>Corte afiado.<br/><em>Barba de respeito.</em></h1>
+      <p className="lead" data-hero-in>Na Barbearia Pitu, cada atendimento é feito com calma, técnica e acabamento caprichado. Chegue de um jeito, saia de outro — e pelo WhatsApp, o horário é todo seu.</p>
+      <div className="cta" data-hero-in><${WaButton} msg=${MSG}>Agendar pelo WhatsApp<//><a className="ghost" href="#servicos">Ver serviços</a></div>
+      <ul className="facts" data-hero-in>
+        <li><${Ico} name="scissors" size=${18} /> Corte · Barba · Acabamento · Sobrancelha</li>
+        <li><${Ico} name="calendar" size=${18} /> Agendamento pelo WhatsApp</li>
+      </ul>
+    </div>
+    <div className="art" data-reveal="zoom" data-delay="0.6">
+      <div className="arch"><${Img} className="lp-cover" src="img/est-9.jpg" alt="Barbeiro de chapéu e suspensórios finalizando o corte de um cliente" eager=${true} kb=${true} /></div>
+      <${Seal} />
+    </div>
+  </div></header>`; }
+
+function Razor(){ return html`<div className="razor" aria-hidden="true"><i></i>
+  <svg width="120" height="28" viewBox="0 0 120 28" fill="currentColor"><path d="M6 17 L62 17 L62 12 C42 5 20 7 6 12 Z"/><circle cx="64" cy="15" r="3"/><path d="M67 14 L112 22 L114 18 L69 11 Z"/><path d="M12 14.5h40" stroke="#17110d" strokeWidth="1" opacity=".5" fill="none"/></svg><i></i></div>`; }
+
+var SV = [
+  ['Corte masculino','Do clássico ao degradê: o corte pensado para o seu rosto, o seu cabelo e o seu dia a dia.','img/est-8.jpg','Barbeiro aparando o cabelo com pente e tesoura','corte masculino'],
+  ['Barba','Alinhamento, volume e contorno no ponto certo, para uma barba que valoriza o seu estilo.','img/est-6.jpg','Barba sendo aparada com tesoura, cliente com capa listrada','barba'],
+  ['Acabamento / pezinho','O detalhe que faz o corte parecer novo por mais tempo: contornos limpos e linhas definidas.','img/est-1.jpg','Barbeiro finalizando o cabelo de um cliente com secador','acabamento e pezinho'],
+  ['Sobrancelha','Desenho discreto e natural, para completar o visual sem exageros.','img/est-7.jpg','Tesoura aparando a barba em foto em preto e branco','sobrancelha']
+];
+function Servicos(){
+  var st = useState(0), a = st[0], setA = st[1];
+  return html`<section className="pad sv" id="servicos"><div className="wrap"><div className="sv-grid">
+    <div className="sv-media" data-reveal="mask">
+      ${SV.map(function(s,i){ return html`<${Img} key=${i} className=${'sv-img' + (i===a ? ' on' : '')} src=${s[2]} alt=${i===a ? s[3] : ''} />`; })}
+      <span className="sv-tag" aria-hidden="true">0${a+1}</span>
+    </div>
+    <div className="sv-list">
+      <span className="eb" data-reveal>Serviços</span>
+      <h2 data-split>O básico bem feito é <em>o que fica.</em></h2>
+      <ul>
+        ${SV.map(function(s,i){ return html`<li key=${i} className=${'row' + (i===a ? ' on' : '')} onMouseEnter=${function(){ setA(i); }} onClick=${function(){ setA(i); }}>
+          <span className="n">0${i+1}</span>
+          <div><h3>${s[0]}</h3><p>${s[1]}</p></div>
+          <a className="go" href=${LP.wa('Olá! Vi o site da Barbearia Pitu e quero agendar: ' + s[4] + '.')} target="_blank" rel="noopener" onFocus=${function(){ setA(i); }}>Agendar <${Ico} name="arrow" size=${16} /></a>
+        </li>`; })}
+      </ul>
+    </div></div></div></section>`;
+}
+
+var WHY = [
+  ['calendar','Hora marcada','Escolha o seu horário direto pelo WhatsApp, sem complicação e sem enrolação.'],
+  ['scissors','Acabamento caprichado','Pezinho, contornos e detalhes feitos com atenção: é no detalhe que o corte aparece.'],
+  ['smile','Clima de barbearia','Cadeira, espelho e papo bom: um espaço para relaxar enquanto cuida do visual.'],
+  ['pin','Pertinho de você','Na Av. Olgamitho Rodrigues, em Santa Mônica — fácil de encaixar na sua rotina.']
+];
+function Why(){ return html`<section className="pad why" id="diferenciais"><div className="wrap">
+  <div className="why-head"><div><span className="eb" data-reveal>Por que a Pitu</span><h2 data-split>Mais que um corte, <em>um ritual.</em></h2></div>
+  <p data-reveal>Quatro motivos para marcar o seu horário e voltar todo mês.</p></div>
+  <div className="why-grid" data-stagger>
+    ${WHY.map(function(w,i){ return html`<div key=${i}><article className="card"><span className="num">0${i+1}</span><h3>${w[1]}</h3><p>${w[2]}</p></article></div>`; })}
+  </div></div></section>`; }
+
+function Ambiente(){ return html`<section className="pad amb" id="ambiente"><div className="wrap">
+  <div className="amb-head"><${Razor} /><span className="eb" data-reveal>O ambiente</span><h2 data-split>Sente, relaxe e <em>saia renovado.</em></h2>
+  <p data-reveal>Um lugar para parar o relógio por alguns minutos e cuidar de você, com o atendimento que você merece.</p></div>
+  <div className="mosaic" data-stagger>
+    <div className="gi g1"><${Img} src="img/est-3.jpg" alt="Barbearia com cadeiras de couro, espelhos e parede de tijolos" /></div>
+    <div className="gi g2"><${Img} src="img/est-4.jpg" alt="Fileira de cadeiras de barbeiro com luminárias pendentes" /></div>
+    <div className="gi g3"><${Img} src="img/est-5.jpg" alt="Cadeira de barbeiro clássica em couro e metal" /></div>
+    <div className="gi g4"><${Img} src="img/est-2.jpg" alt="Barbeiro aparando a barba de um cliente com tesoura" /></div>
+  </div>
+  <p className="note">Imagens ilustrativas.</p></div></section>`; }
+
+function Depoimentos(){ return html`<section className="pad rev" id="depoimentos"><div className="wrap">
+  <span className="eb" data-reveal>Quem senta, volta</span><h2 data-split>O que os clientes <em>costumam dizer</em></h2>
+  <p data-reveal style=${{marginTop:'1rem',color:'var(--muted)',fontSize:'.85rem'}}>Depoimentos ilustrativos, criados para esta prévia.</p>
+  <div className="rev-grid" data-stagger>
+    <div><figure className="tk big" style=${{margin:0}}><span className="mk" aria-hidden="true">“</span><blockquote style=${{margin:0}}><q>Cheguei com o cabelo e a barba fora de controle e saí outro. Atendimento tranquilo, sem pressa, e o acabamento é impecável.</q></blockquote><figcaption className="who">Cliente · Santa Mônica</figcaption></figure></div>
+    <div className="rev-side">
+      <figure className="tk" style=${{margin:0}}><blockquote style=${{margin:0}}><q>Marquei pelo WhatsApp em dois minutos. Fácil, direto, e o corte ficou do jeito que eu pedi.</q></blockquote><figcaption className="who">Cliente · Divino Espírito Santo</figcaption></figure>
+      <figure className="tk" style=${{margin:0}}><blockquote style=${{margin:0}}><q>Ambiente bom, papo bom e barba sempre alinhada. Virou compromisso do mês.</q></blockquote><figcaption className="who">Cliente · Praia da Costa</figcaption></figure>
+    </div>
+  </div></div></section>`; }
+
+function Final(){ return html`<section className="final" id="agendar"><div className="pole" aria-hidden="true"></div><div className="wrap final-pad"><span className="eb" data-reveal>Agende agora</span><h2 data-split>Sua cadeira já está <em>esperando.</em></h2><p data-reveal>Chame no WhatsApp, escolha o horário e venha cuidar do visual.</p><div data-reveal="zoom"><${WaButton} msg=${MSG}>Falar no WhatsApp<//></div></div></section>`; }
+
+function Footer(){ return html`<footer id="contato"><div className="wrap"><div className="fg">
+  <div><div className="fb"><small>Barbearia</small>Pitu</div><p style=${{maxWidth:'34ch',marginTop:'1rem'}}>Barbearia em Santa Mônica, Vila Velha. Corte, barba, acabamento e sobrancelha, com horário marcado pelo WhatsApp.</p></div>
+  <div><h4>Contato</h4><ul><li><${Ico} name="phone" size=${18} /><span>Telefone / WhatsApp<br/><a href="tel:+5527992379032">(27) 99237-9032</a></span></li><li><${Ico} name="wa" size=${18} /><span>Agendamento pelo WhatsApp</span></li></ul></div>
+  <div><h4>Onde estamos</h4><ul><li><${Ico} name="pin" size=${18} /><span>Av. Olgamitho Rodrigues, 50<br/>Santa Mônica · Vila Velha/ES<br/>CEP 29105-615<br/><a href=${MAPS} target="_blank" rel="noopener">Ver no mapa</a></span></li><li><${Ico} name="clock" size=${18} /><span>Horários: consulte pelo WhatsApp</span></li></ul></div></div>
+  <p className="cp">© Barbearia Pitu. Prévia de demonstração — layout e textos ilustrativos.</p></div></footer>`; }
+
+function Page(){ return html`<main><${Nav} /><${Hero} />
+  <div className="band"><${Marquee} items=${['Corte masculino','Barba','Acabamento','Sobrancelha','Hora marcada']} speed=${28} /></div>
+  <${Servicos} /><${Why} /><${Ambiente} /><${Depoimentos} /><${Final} /><${Footer} /></main>`; }
+
+LP.mount(Page, { empresa:'Barbearia Pitu', whatsapp:'5527992379032', mensagem:MSG, intro:{ title:'BARBEARIA PITU', sub:'Santa Mônica · Vila Velha' }, introMs:1900 });
+})();
+</script>
+</body>
+</html>

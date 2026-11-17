@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Advocacia Dal Piaz — Vitória (ES) | Prévia de site</title>
+<meta name="description" content="Prévia de site para a Advocacia Dal Piaz, escritório no Centro de Vitória (ES).">
+<meta property="og:title" content="Advocacia Dal Piaz — Estratégia, clareza e presença">
+<meta property="og:description" content="Prévia de site criada para a Advocacia Dal Piaz, Vitória (ES).">
+<meta property="og:image" content="img/adv-7.jpg">
+<meta name="theme-color" content="#0a0a0c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/kit.css">
+<style>
+:root{--bg:#0a0a0c;--fg:#ece6d8;--accent:#c9a45c;--on-accent:#0a0a0c;--gold2:#e8cf94;--line:rgba(201,164,92,.28);--panel:#111114;--intro-bg:#050506;--intro-fg:#ece6d8;--intro-ls:.14em;
+--font-display:'Cormorant Garamond',Georgia,serif;--font-body:'Manrope',system-ui,sans-serif}
+.wrap{width:min(1200px,calc(100% - 56px));margin-inline:auto}
+em{font-style:italic;color:var(--gold2)}
+.nav{position:fixed;inset:0 0 auto 0;z-index:800;padding:1.6rem 0;transition:.4s}
+.nav.scrolled{background:rgba(10,10,12,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:.9rem 0;border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--font-display);font-size:1.7rem;letter-spacing:.24em;font-weight:500;display:flex;flex-direction:column;line-height:1}
+.logo small{font:500 .6rem var(--font-body);letter-spacing:.5em;color:var(--accent);margin-top:.45rem;text-transform:uppercase}
+.nav ul{display:flex;gap:2.4rem;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+.nav ul a{opacity:.75;transition:.3s}.nav ul a:hover{opacity:1;color:var(--gold2)}
+.nav .lp-btn{padding:.75rem 1.3rem;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;border-radius:2px}
+@media(max-width:860px){.nav ul{display:none}}
+.lp-btn{border-radius:2px;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(10,10,12,.55),rgba(10,10,12,.92) 75%),linear-gradient(0deg,#0a0a0c,transparent 40%)}
+.frame{position:absolute;inset:24px;border:1px solid var(--line);pointer-events:none;z-index:2}
+.hero-in{position:relative;z-index:3;padding-top:5rem}
+.eyebrow{font-size:.74rem;letter-spacing:.42em;text-transform:uppercase;color:var(--accent);font-weight:600;display:flex;align-items:center;gap:1rem;margin-bottom:1.8rem}
+.eyebrow::before{content:"";width:56px;height:1px;background:var(--accent)}
+.hero h1{font-family:var(--font-display);font-weight:300;font-size:clamp(3rem,8.4vw,8rem);line-height:.96;letter-spacing:-.02em;max-width:14ch}
+.lead{max-width:48ch;margin-top:2rem;color:rgba(236,230,216,.72);line-height:1.8;font-size:1.05rem}
+.cta{margin-top:2.6rem;display:flex;gap:1.6rem;flex-wrap:wrap;align-items:center}
+.tlink{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;border-bottom:1px solid var(--accent);padding-bottom:.4rem;transition:.3s}.tlink:hover{color:var(--gold2)}
+.scroll{position:absolute;bottom:34px;left:50%;z-index:3;width:1px;height:70px;background:var(--line);overflow:hidden}
+.scroll::after{content:"";position:absolute;left:0;top:-40%;width:1px;height:40%;background:var(--accent);animation:sc 2.2s ease-in-out infinite}
+@keyframes sc{to{top:110%}}
+section{padding:clamp(5rem,11vw,9rem) 0;position:relative}
+.kicker{font-size:.72rem;letter-spacing:.42em;text-transform:uppercase;color:var(--accent);font-weight:700;display:block;margin-bottom:1.2rem}
+h2{font-family:var(--font-display);font-weight:300;font-size:clamp(2.4rem,5.6vw,4.8rem);line-height:1.02;letter-spacing:-.015em}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.about-img{position:relative;aspect-ratio:4/5;overflow:hidden}
+.about-img::after{content:"";position:absolute;inset:14px;border:1px solid rgba(236,230,216,.4);pointer-events:none}
+.about p{margin-top:1.6rem;line-height:1.9;color:rgba(236,230,216,.74);font-size:1.06rem;max-width:52ch}
+.about p:first-of-type::first-letter{font-family:var(--font-display);font-size:4.4rem;float:left;line-height:.8;padding:.4rem .7rem 0 0;color:var(--accent)}
+.vals{display:flex;gap:2.4rem;margin-top:2.4rem;flex-wrap:wrap}
+.vals div{display:flex;gap:.7rem;align-items:center;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--gold2)}
+@media(max-width:860px){.about{grid-template-columns:1fr}.about-img{aspect-ratio:4/3}}
+.areas-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;margin-bottom:3.4rem;flex-wrap:wrap}
+.areas-head p{max-width:38ch;color:rgba(236,230,216,.62);line-height:1.7}
+.area{display:grid;grid-template-columns:70px 1fr 1.1fr 40px;gap:1.5rem;align-items:center;padding:2.1rem 0;border-top:1px solid var(--line);position:relative;transition:padding .5s cubic-bezier(.2,.8,.2,1)}
+.area:last-child{border-bottom:1px solid var(--line)}
+.area::after{content:"";position:absolute;left:0;bottom:-1px;height:1px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:0 50%;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.area:hover{padding-left:1.4rem}.area:hover::after{transform:scaleX(1)}
+.area .n{font-family:var(--font-display);font-style:italic;color:var(--accent);font-size:1.3rem}
+.area h3{font-family:var(--font-display);font-weight:400;font-size:clamp(1.6rem,3vw,2.5rem);line-height:1.1}
+.area p{color:rgba(236,230,216,.62);line-height:1.7;font-size:.97rem}
+.area svg{color:var(--accent);transition:.4s}.area:hover svg{transform:translate(4px,-4px)}
+@media(max-width:820px){.area{grid-template-columns:44px 1fr;row-gap:.6rem}.area p{grid-column:2}.area svg{display:none}}
+.banner{height:78vh;min-height:480px;display:grid;place-items:center;text-align:center;overflow:hidden;position:relative;padding:0}
+.banner::after{content:"";position:absolute;inset:0;background:rgba(5,5,6,.62)}
+.banner blockquote{position:relative;z-index:2;margin:0;font-family:var(--font-display);font-weight:300;font-style:italic;font-size:clamp(2rem,5.4vw,4.8rem);line-height:1.1;max-width:20ch;padding:0 24px}
+.method{background:var(--panel)}
+.m-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:5rem}
+.m-sticky{position:sticky;top:120px;align-self:start}
+.m-sticky p{margin-top:1.4rem;color:rgba(236,230,216,.65);line-height:1.8;max-width:38ch}
+.m-line{position:relative;padding-left:3.4rem}
+.m-line svg{position:absolute;left:0;top:0;height:100%;width:20px;overflow:visible}
+.mstep{padding-bottom:4.4rem;position:relative}
+.mstep:last-child{padding-bottom:0}
+.mstep::before{content:"";position:absolute;left:-3.4rem;top:.5rem;width:20px;height:20px;border-radius:50%;background:var(--panel);border:1px solid var(--accent);box-shadow:0 0 0 6px var(--panel)}
+.mstep span{font-family:var(--font-display);color:var(--accent);font-style:italic;font-size:1.2rem}
+.mstep h3{font-family:var(--font-display);font-weight:400;font-size:2.2rem;margin:.3rem 0 .8rem}
+.mstep p{color:rgba(236,230,216,.65);line-height:1.8;max-width:46ch}
+@media(max-width:860px){.m-grid{grid-template-columns:1fr;gap:3rem}.m-sticky{position:static}}
+.dep{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.dep figure{margin:0;padding:2.6rem 0 0;border-top:1px solid var(--line)}
+.dep p{font-family:var(--font-display);font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.35;font-style:italic;font-weight:300}
+.dep figcaption{margin-top:1.4rem;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700}
+@media(max-width:760px){.dep{grid-template-columns:1fr}}
+.final{text-align:center;background:radial-gradient(ellipse at 50% 120%,rgba(201,164,92,.22),transparent 60%)}
+.final h2{font-size:clamp(2.6rem,7vw,6.4rem);max-width:15ch;margin:0 auto 1.6rem}
+.final p{color:rgba(236,230,216,.68);max-width:46ch;margin:0 auto 2.4rem;line-height:1.8}
+footer{border-top:1px solid var(--line);padding:3.5rem 0 6rem;font-size:.92rem;color:rgba(236,230,216,.7)}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:3rem}
+footer h4{font-size:.7rem;letter-spacing:.34em;text-transform:uppercase;color:var(--accent);margin-bottom:1.1rem}
+footer li{margin-bottom:.7rem;line-height:1.6}
+.legal{margin-top:3rem;font-size:.76rem;opacity:.55;line-height:1.7;max-width:80ch}
+@media(max-width:760px){.fg{grid-template-columns:1fr;gap:2rem}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="vendor/react.production.min.js"></script>
+<script src="vendor/react-dom.production.min.js"></script>
+<script src="vendor/htm.umd.js"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="shared/kit.js"></script>
+<script>
+(function(){
+var LP = window.LP, html = LP.html, Ico = LP.Ico, Img = LP.Img, WaButton = LP.WaButton;
+var MSG = 'Olá! Gostaria de agendar uma conversa com a Advocacia Dal Piaz.';
+
+var AREAS = [
+  ['Direito Civil e Contratos','Análise, elaboração e revisão de contratos, responsabilidade civil e questões patrimoniais.'],
+  ['Família e Sucessões','Divórcio, guarda, pensão, inventários e planejamento sucessório, com sensibilidade e sigilo.'],
+  ['Direito do Consumidor','Orientação e defesa em conflitos de consumo, cobranças indevidas e falhas na prestação de serviços.'],
+  ['Direito Trabalhista','Atuação consultiva e contenciosa em relações de trabalho, para empregados e empregadores.'],
+  ['Previdenciário','Planejamento e requerimento de benefícios junto ao INSS, com acompanhamento de cada etapa.'],
+  ['Empresarial','Apoio jurídico preventivo para empresas: contratos, societário e rotina do negócio.']
+];
+
+function Nav(){ return html`<nav className="nav"><div className="wrap">
+  <a href="#inicio" className="logo">DAL PIAZ<small>Advocacia</small></a>
+  <ul><li><a href="#escritorio">Escritório</a></li><li><a href="#areas">Áreas</a></li><li><a href="#metodo">Método</a></li><li><a href="#contato">Contato</a></li></ul>
+  <${WaButton} magnetic=${false} msg=${MSG}>Agendar<//>
+</div></nav>`; }
+
+function Hero(){ return html`<header className="hero" id="inicio">
+  <div className="hero-bg"><${Img} className="lp-cover" src="img/adv-7.jpg" alt="Biblioteca jurídica" eager=${true} kb=${true} /></div>
+  <div className="frame"></div>
+  <div className="wrap hero-in">
+    <p className="eyebrow" data-hero-in>Advocacia · Centro de Vitória, ES</p>
+    <h1 data-split data-hero>Estratégia na causa. <em>Presença</em> no atendimento.</h1>
+    <p className="lead" data-hero-in>Orientação jurídica clara e personalizada, conduzida com ética, sigilo e atenção a cada detalhe do seu caso.</p>
+    <div className="cta" data-hero-in><${WaButton} msg=${MSG}>Agendar uma conversa<//><a className="tlink" href="#areas">Áreas de atuação</a></div>
+  </div>
+  <div className="scroll"></div>
+</header>`; }
+
+function Escritorio(){ return html`<section id="escritorio"><div className="wrap about">
+  <div className="about-img" data-reveal="mask"><${Img} className="lp-px" parallax="0.07" src="img/adv-4.jpg" alt="Assinatura de documentos" /></div>
+  <div>
+    <span className="kicker" data-reveal>O escritório</span>
+    <h2 data-split>Cada caso é uma história. <em>Tratamos assim.</em></h2>
+    <p data-reveal>Acreditamos que um bom atendimento jurídico começa pela escuta. Entender o contexto, os riscos e o objetivo de cada cliente é o que permite construir uma estratégia segura e realista.</p>
+    <p data-reveal>Linguagem acessível, comunicação transparente e acompanhamento próximo, para que você saiba, a cada momento, em que ponto está o seu processo.</p>
+    <div className="vals" data-reveal><div><${Ico} name="scale" size=${20} /> Ética</div><div><${Ico} name="shield" size=${20} /> Sigilo</div><div><${Ico} name="chat" size=${20} /> Clareza</div></div>
+  </div></div></section>`; }
+
+function Areas(){ return html`<section id="areas"><div className="wrap">
+  <div className="areas-head"><div><span className="kicker" data-reveal>Atuação</span><h2 data-split>Áreas de <em>atuação</em></h2></div>
+  <p data-reveal>Atendimento consultivo e contencioso, com atenção personalizada em cada área.</p></div>
+  <div>${AREAS.map(function(a,i){ return html`<div className="area" key=${i} data-reveal><span className="n">0${i+1}</span><h3>${a[0]}</h3><p>${a[1]}</p><${Ico} name="up" size=${26} /></div>`; })}</div>
+</div></section>`; }
+
+function Banner(){ return html`<section className="banner"><${Img} className="lp-px" parallax="0.1" src="img/adv-6.jpg" alt="Colunas clássicas" />
+  <blockquote data-split>A confiança se constrói em cada conversa.</blockquote></section>`; }
+
+function Metodo(){ return html`<section className="method" id="metodo"><div className="wrap m-grid">
+  <div className="m-sticky"><span className="kicker" data-reveal>Como trabalhamos</span><h2 data-split>Um caminho <em>claro</em>, do início ao fim.</h2><p data-reveal>Processo transparente, com você informado em todas as etapas.</p></div>
+  <div className="m-line" data-draw-wrap>
+    <svg viewBox="0 0 20 100" preserveAspectRatio="none"><path data-draw d="M10 0 V100" stroke="#c9a45c" strokeWidth="1.4" fill="none" vectorEffect="non-scaling-stroke" /></svg>
+    <div className="mstep" data-reveal><span>I</span><h3>Escuta</h3><p>Uma conversa reservada para entender o seu caso, os fatos e o que você espera alcançar.</p></div>
+    <div className="mstep" data-reveal><span>II</span><h3>Estratégia</h3><p>Análise técnica, riscos e caminhos possíveis apresentados com franqueza, sem promessas de resultado.</p></div>
+    <div className="mstep" data-reveal><span>III</span><h3>Acompanhamento</h3><p>Atuação diligente e comunicação constante, para você acompanhar cada movimentação.</p></div>
+  </div></div></section>`; }
+
+function Dep(){ return html`<section><div className="wrap">
+  <span className="kicker" data-reveal>Relatos de clientes</span>
+  <div className="dep" data-stagger>
+    <figure><p>“Fui ouvido com atenção e recebi explicações claras sobre cada passo. Isso fez toda a diferença para eu me sentir seguro.”</p><figcaption>— Cliente, Vitória</figcaption></figure>
+    <figure><p>“Atendimento profissional, ágil e muito educado. Sempre que precisei de uma informação, fui respondido rapidamente.”</p><figcaption>— Cliente, Vila Velha</figcaption></figure>
+  </div></div></section>`; }
+
+function Final(){ return html`<section className="final" id="contato"><div className="wrap">
+  <h2 data-split>Converse com quem vai <em>cuidar do seu caso.</em></h2>
+  <p data-reveal>Agende um primeiro contato pelo WhatsApp. Sua conversa é tratada com sigilo.</p>
+  <div data-reveal="zoom"><${WaButton} msg=${MSG}>Falar pelo WhatsApp<//></div></div></section>`; }
+
+function Footer(){ return html`<footer><div className="wrap"><div className="fg">
+  <div><div className="logo" style=${{marginBottom:'1rem'}}>DAL PIAZ<small>Advocacia</small></div><p style=${{maxWidth:'34ch',lineHeight:1.7}}>Orientação jurídica com ética, sigilo e atenção ao cliente, no Centro de Vitória.</p></div>
+  <div><h4>Contato</h4><ul><li>(27) 98113-0371</li><li>WhatsApp para agendamentos</li></ul></div>
+  <div><h4>Endereço</h4><ul><li>Rua Caramuru, 62 — Centro<br/>Vitória · ES</li><li>Horários: consulte pelo WhatsApp</li></ul></div></div>
+  <p className="legal">As informações deste site têm caráter meramente informativo e não constituem aconselhamento jurídico. Prévia de demonstração — layout e textos ilustrativos, sujeitos à validação do escritório e às normas da OAB.</p></div></footer>`; }
+
+function Page(){ return html`<main><${Nav} /><${Hero} /><${Escritorio} /><${Areas} /><${Banner} /><${Metodo} /><${Dep} /><${Final} /><${Footer} /></main>`; }
+
+LP.mount(Page, { empresa:'Advocacia Dal Piaz', whatsapp:'5527981130371', mensagem:MSG, letterbox:true, intro:{ title:'DAL PIAZ', sub:'Advocacia · Vitória' }, introMs:2100 });
+})();
+</script>
+</body>
+</html>

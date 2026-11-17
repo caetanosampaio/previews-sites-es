@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anderson Car — Mecânica em Vitória (ES) | Prévia de site</title>
+<meta name="description" content="Prévia de site para a Anderson Car, oficina mecânica em Maria Ortiz, Vitória (ES).">
+<meta property="og:title" content="Anderson Car — Seu carro em mãos de quem entende">
+<meta property="og:description" content="Prévia de site criada para a Anderson Car, Vitória (ES).">
+<meta property="og:image" content="img/mec-1.jpg">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/kit.css">
+<style>
+:root{--bg:#0b0b0c;--fg:#f2f2f0;--accent:#ffc400;--on-accent:#0b0b0c;--orange:#ff5a1f;--steel:#17181b;--steel2:#222328;--intro-bg:#ffc400;--intro-fg:#0b0b0c;--intro-ls:.02em;
+--font-display:'Anton',Impact,sans-serif;--font-body:'Inter',system-ui,sans-serif;--cond:'Barlow Condensed',sans-serif}
+.wrap{width:min(1220px,calc(100% - 48px));margin-inline:auto}
+.lp-intro{--accent:#0b0b0c}
+.lp-btn{border-radius:0;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px))}
+.nav{position:fixed;inset:0 0 auto 0;z-index:800;padding:1.2rem 0;transition:.35s}
+.nav.scrolled{background:rgba(11,11,12,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:.7rem 0;border-bottom:2px solid var(--accent)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{font-family:var(--font-display);font-size:1.7rem;letter-spacing:.04em;text-transform:uppercase;display:flex;gap:.5rem;align-items:center}
+.logo b{background:var(--accent);color:#000;padding:.05em .4em;transform:skewX(-10deg);display:inline-block}
+.nav ul{display:flex;gap:2rem;font-family:var(--cond);font-weight:600;font-size:1.1rem;letter-spacing:.12em;text-transform:uppercase}
+.nav ul a:hover{color:var(--accent)}
+.nav .lp-btn{padding:.65rem 1.2rem;font-family:var(--cond);font-size:1.05rem;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:860px){.nav ul{display:none}}
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:#000}
+.hero-bg{position:absolute;inset:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,#0b0b0c 8%,rgba(11,11,12,.7) 45%,rgba(11,11,12,.15)),linear-gradient(0deg,#0b0b0c,transparent 30%)}
+.hero-in{position:relative;z-index:2;padding-top:5rem}
+.tag{display:inline-flex;gap:.6rem;align-items:center;font-family:var(--cond);font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);font-size:1.05rem;margin-bottom:1rem}
+.tag::before{content:"";width:40px;height:3px;background:var(--accent)}
+.hero h1{font-family:var(--font-display);font-weight:400;text-transform:uppercase;font-size:clamp(3.6rem,12vw,11rem);line-height:.88;letter-spacing:.005em}
+.hero h1 .o{color:transparent;-webkit-text-stroke:2px var(--accent)}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.lead{max-width:46ch;margin-top:1.6rem;font-size:1.15rem;line-height:1.65;color:rgba(242,242,240,.78)}
+.cta{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:2.2rem;align-items:center}
+.sline{display:inline-flex;gap:.6rem;align-items:center;font-family:var(--cond);font-weight:700;font-size:1.15rem;letter-spacing:.12em;text-transform:uppercase;padding:.9rem 0;border-bottom:3px solid var(--accent)}
+.gauge{position:absolute;right:max(24px,calc((100vw - 1220px)/2));bottom:8vh;width:min(340px,34vw);z-index:2}
+@media(max-width:900px){.gauge{display:none}}
+.strip{background:var(--accent);color:#0b0b0c;font-family:var(--font-display);text-transform:uppercase;font-size:clamp(1.4rem,3vw,2.2rem);padding:.9rem 0;transform:rotate(-1.2deg);margin:-1.2rem -2% 0;position:relative;z-index:3;box-shadow:0 12px 40px rgba(0,0,0,.5)}
+section{padding:clamp(4.5rem,10vw,8rem) 0;position:relative}
+.kick{font-family:var(--cond);font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);font-size:1.05rem;display:block;margin-bottom:.8rem}
+h2{font-family:var(--font-display);font-weight:400;text-transform:uppercase;font-size:clamp(2.6rem,7vw,6rem);line-height:.95}
+h2 em{font-style:normal;color:var(--accent)}
+.sv{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#26272c;margin-top:3rem;border:2px solid #26272c}
+.svc{background:var(--steel);padding:2.4rem 2rem 2.2rem;position:relative;overflow:hidden;transition:background .4s;min-height:260px;display:flex;flex-direction:column}
+.svc::before{content:attr(data-n);position:absolute;right:1.2rem;top:.4rem;font-family:var(--font-display);font-size:5.4rem;color:rgba(255,255,255,.05);transition:.4s}
+.svc:hover{background:var(--accent);color:#0b0b0c}.svc:hover::before{color:rgba(0,0,0,.12)}
+.svc svg{color:var(--accent);margin-bottom:auto;transition:.4s}.svc:hover svg{color:#0b0b0c;transform:rotate(-12deg) scale(1.15)}
+.svc h3{font-family:var(--font-display);font-weight:400;text-transform:uppercase;font-size:1.9rem;margin:2rem 0 .5rem;letter-spacing:.01em}
+.svc p{line-height:1.6;opacity:.75;font-size:.97rem}
+@media(max-width:900px){.sv{grid-template-columns:1fr 1fr}}@media(max-width:560px){.sv{grid-template-columns:1fr}}
+.dg{display:grid;grid-template-columns:1.05fr .95fr;gap:4rem;align-items:center}
+.dg-img{position:relative;aspect-ratio:1/1.05;overflow:hidden;clip-path:polygon(0 0,100% 0,100% 88%,88% 100%,0 100%)}
+.dg-img::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,11,12,.6),transparent 50%)}
+.steps{counter-reset:s;margin-top:2rem}
+.steps li{counter-increment:s;display:grid;grid-template-columns:78px 1fr;gap:1rem;padding:1.4rem 0;border-top:1px solid #2b2c31;align-items:start}
+.steps li:last-child{border-bottom:1px solid #2b2c31}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--font-display);font-size:3rem;line-height:1;color:var(--accent)}
+.steps h3{font-family:var(--cond);font-size:1.7rem;text-transform:uppercase;letter-spacing:.04em;font-weight:700}
+.steps p{opacity:.7;line-height:1.6;margin-top:.2rem}
+@media(max-width:900px){.dg{grid-template-columns:1fr;gap:2.4rem}}
+.why{background:var(--steel);overflow:hidden}
+.why .row{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;margin-top:3rem}
+.why .item{padding:1.8rem 1.4rem;border-left:4px solid var(--accent);background:var(--steel2)}
+.why .item svg{color:var(--accent)}
+.why .item h3{font-family:var(--cond);text-transform:uppercase;font-size:1.5rem;letter-spacing:.05em;margin:.9rem 0 .4rem}
+.why .item p{opacity:.7;line-height:1.55;font-size:.95rem}
+@media(max-width:900px){.why .row{grid-template-columns:1fr 1fr}}@media(max-width:520px){.why .row{grid-template-columns:1fr}}
+.proof .t{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.6rem}
+.proof figure{margin:0;background:var(--steel);padding:2rem;border-top:4px solid var(--accent)}
+.proof p{font-size:1.1rem;line-height:1.6}
+.proof figcaption{margin-top:1.3rem;font-family:var(--cond);text-transform:uppercase;letter-spacing:.16em;font-weight:700;color:var(--accent)}
+@media(max-width:900px){.proof .t{grid-template-columns:1fr}}
+.final{background:var(--accent);color:#0b0b0c;overflow:hidden;text-align:center}
+.final h2{font-size:clamp(3rem,10vw,9rem);color:#0b0b0c}
+.final p{font-weight:600;max-width:44ch;margin:1rem auto 2rem;font-size:1.15rem}
+.final .lp-btn{background:#0b0b0c;color:var(--accent);font-family:var(--cond);font-size:1.3rem;letter-spacing:.1em;text-transform:uppercase;padding:1.1rem 2.2rem}
+.final .lp-btn:hover{box-shadow:0 16px 40px -8px rgba(0,0,0,.6)}
+footer{background:#050506;padding:3.5rem 0 6rem;color:rgba(242,242,240,.7)}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:3rem}
+footer h4{font-family:var(--cond);letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-size:1.05rem;margin-bottom:1rem}
+footer li{display:flex;gap:.7rem;margin-bottom:.7rem;line-height:1.5}
+footer li svg{color:var(--accent);flex:none;margin-top:3px}
+.cp{margin-top:2.5rem;font-size:.8rem;opacity:.55}
+@media(max-width:760px){.fg{grid-template-columns:1fr;gap:2rem}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="vendor/react.production.min.js"></script>
+<script src="vendor/react-dom.production.min.js"></script>
+<script src="vendor/htm.umd.js"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="shared/kit.js"></script>
+<script>
+(function(){
+var LP = window.LP, html = LP.html, Ico = LP.Ico, Img = LP.Img, WaButton = LP.WaButton, Marquee = LP.Marquee;
+var MSG = 'Olá! Vi o site da Anderson Car e gostaria de agendar uma avaliação do meu carro.';
+
+function Gauge(){
+  // conta-giros animado
+  var ticks = [];
+  for (var i=0;i<=10;i++){ var a = (-210 + i*24) * Math.PI/180; ticks.push({x1:100+78*Math.cos(a), y1:100+78*Math.sin(a), x2:100+(i%2?86:92)*Math.cos(a), y2:100+(i%2?86:92)*Math.sin(a), n:i}); }
+  var ref = React.useRef();
+  React.useEffect(function(){
+    var needle = ref.current.querySelector('.needle');
+    gsap.fromTo(needle,{rotation:-35,transformOrigin:'100px 100px'},{rotation:190,duration:2.4,ease:'power3.inOut',delay:2.2,yoyo:true,repeat:1,repeatDelay:.2});
+  },[]);
+  return html`<svg ref=${ref} viewBox="0 0 200 200" className="gauge" data-hero-in aria-hidden="true">
+    <circle cx="100" cy="100" r="96" fill="rgba(11,11,12,.7)" stroke="#2b2c31" strokeWidth="2"/>
+    <path d="M30 150 A78 78 0 1 1 170 150" fill="none" stroke="#222328" strokeWidth="10" strokeLinecap="round"/>
+    <path d="M30 150 A78 78 0 1 1 170 150" fill="none" stroke="#ffc400" strokeWidth="10" strokeLinecap="round" strokeDasharray="300 400" opacity=".9"/>
+    ${ticks.map(function(t){return html`<g key=${t.n}><line x1=${t.x1} y1=${t.y1} x2=${t.x2} y2=${t.y2} stroke="#f2f2f0" strokeWidth="2"/><text x=${100+64*Math.cos((-210+t.n*24)*Math.PI/180)} y=${103+64*Math.sin((-210+t.n*24)*Math.PI/180)} fill="#f2f2f0" fontSize="9" fontFamily="Barlow Condensed" textAnchor="middle">${t.n}</text></g>`})}
+    <g className="needle"><line x1="100" y1="100" x2="100" y2="34" stroke="#ff5a1f" strokeWidth="3" strokeLinecap="round"/><circle cx="100" cy="100" r="7" fill="#ff5a1f"/></g>
+    <text x="100" y="140" fill="#ffc400" fontSize="12" fontFamily="Anton" textAnchor="middle" letterSpacing="2">RPM ×1000</text>
+  </svg>`;
+}
+
+function Nav(){ return html`<nav className="nav"><div className="wrap">
+  <a href="#inicio" className="logo"><b>Anderson</b> Car</a>
+  <ul><li><a href="#servicos">Serviços</a></li><li><a href="#diagnostico">Como funciona</a></li><li><a href="#contato">Contato</a></li></ul>
+  <${WaButton} magnetic=${false} msg=${MSG}>Orçamento<//>
+</div></nav>`; }
+
+function Hero(){ return html`<header className="hero" id="inicio">
+  <div className="hero-bg"><${Img} className="lp-cover" src="img/mec-1.jpg" alt="Mecânico trabalhando no motor" eager=${true} kb=${true} /></div>
+  <div className="wrap hero-in">
+    <p className="tag" data-hero-in>Oficina mecânica · Maria Ortiz, Vitória</p>
+    <h1 data-split data-hero>Seu carro<br/>em mãos de<br/><em>quem entende.</em></h1>
+    <p className="lead" data-hero-in>Diagnóstico honesto, orçamento transparente e serviço bem feito. Do óleo ao motor, cuidamos do seu carro como se fosse o nosso.</p>
+    <div className="cta" data-hero-in><${WaButton} msg=${MSG}>Pedir orçamento<//><a className="sline" href="#servicos">Ver serviços <${Ico} name="arrow" size=${20} /></a></div>
+  </div>
+  <${Gauge} />
+</header>`; }
+
+var SV = [
+  ['gear','Motor e injeção','Diagnóstico eletrônico, revisão de motor, injeção e correção de falhas.'],
+  ['car','Suspensão e direção','Amortecedores, buchas, alinhamento e balanceamento para rodar firme.'],
+  ['shield','Freios','Pastilhas, discos, fluido e revisão completa do sistema de frenagem.'],
+  ['bolt','Elétrica e bateria','Bateria, alternador, motor de arranque e iluminação.'],
+  ['drop','Revisão e troca de óleo','Revisão preventiva, filtros e fluidos conforme o seu manual.'],
+  ['spark','Ar-condicionado','Higienização, carga de gás e reparo para o conforto no calor capixaba.']
+];
+function Servicos(){ return html`<section id="servicos"><div className="wrap">
+  <span className="kick" data-reveal>O que fazemos</span><h2 data-split>Serviços para<br/>manter você <em>na estrada</em></h2>
+  <div className="sv" data-stagger>${SV.map(function(s,i){ return html`<article className="svc" key=${i} data-n=${'0'+(i+1)}><${Ico} name=${s[0]} size=${40} sw=${1.5} /><h3>${s[1]}</h3><p>${s[2]}</p></article>`; })}</div>
+</div></section>`; }
+
+function Diag(){ return html`<section id="diagnostico"><div className="wrap dg">
+  <div className="dg-img" data-reveal="maskx"><${Img} className="lp-px" parallax="0.08" src="img/mec-8.jpg" alt="Carro em elevador na oficina" /></div>
+  <div><span className="kick" data-reveal>Sem surpresa</span><h2 data-split>Do problema à <em>solução</em></h2>
+  <ol className="steps" data-stagger style=${{margin:'2rem 0 0',padding:0,listStyle:'none'}}>
+    <li><div><h3>Você explica</h3><p>Conte o sintoma pelo WhatsApp ou traga o carro.</p></div></li>
+    <li><div><h3>Diagnóstico</h3><p>Avaliamos com atenção e mostramos o que realmente precisa ser feito.</p></div></li>
+    <li><div><h3>Orçamento claro</h3><p>Valores e prazos combinados antes de qualquer serviço.</p></div></li>
+    <li><div><h3>Serviço e entrega</h3><p>Trabalho conferido e carro pronto para rodar com segurança.</p></div></li>
+  </ol></div></div></section>`; }
+
+function Why(){ var w=[['shield','Transparência','Você aprova cada serviço antes de começar.'],['clock','Prazo combinado','Respeito ao seu tempo, com avisos pelo WhatsApp.'],['gear','Peças de qualidade','Orientação sobre as melhores opções para o seu carro.'],['chat','Contato direto','Fale com quem cuida do seu carro, sem burocracia.']];
+  return html`<section className="why"><div className="wrap"><span className="kick" data-reveal>Por que a Anderson Car</span><h2 data-split>Confiança <em>de oficina</em></h2>
+  <div className="row" data-stagger>${w.map(function(x,i){return html`<div className="item" key=${i}><${Ico} name=${x[0]} size=${32} /><h3>${x[1]}</h3><p>${x[2]}</p></div>`})}</div></div></section>`; }
+
+function Proof(){ return html`<section className="proof"><div className="wrap"><span className="kick" data-reveal>Clientes</span><h2 data-split>Quem confia, <em>volta</em></h2>
+  <div className="t" data-stagger>
+   <figure><p>“Explicaram o problema com clareza e o orçamento bateu certinho com o que foi cobrado. Atendimento honesto.”</p><figcaption>Ricardo M. · Maria Ortiz</figcaption></figure>
+   <figure><p>“Resolveram o barulho na suspensão que ninguém achava. Carro ficou redondo e entregaram no prazo.”</p><figcaption>Juliana P. · Jardim da Penha</figcaption></figure>
+   <figure><p>“Peguei o orçamento pelo WhatsApp em minutos. Pra quem não tem tempo, isso é ouro.”</p><figcaption>Thiago S. · Vitória</figcaption></figure>
+  </div></div></section>`; }
+
+function Final(){ return html`<section className="final" id="contato"><div className="wrap"><h2 data-split>Seu carro merece<br/>quem entende</h2>
+  <p data-reveal>Mande o problema pelo WhatsApp e receba orientação e orçamento.</p><div data-reveal="zoom"><${WaButton} msg=${MSG}>Chamar a Anderson Car<//></div></div></section>`; }
+
+function Footer(){ return html`<footer><div className="wrap"><div className="fg">
+  <div><div className="logo" style=${{marginBottom:'1rem'}}><b>Anderson</b> Car</div><p style=${{maxWidth:'34ch',lineHeight:1.7}}>Oficina mecânica em Maria Ortiz, Vitória — serviço honesto e orçamento claro.</p></div>
+  <div><h4>Contato</h4><ul><li><${Ico} name="phone" size=${18} /> (27) 99822-2980</li><li><${Ico} name="wa" size=${18} /> WhatsApp para orçamentos</li></ul></div>
+  <div><h4>Onde estamos</h4><ul><li><${Ico} name="pin" size=${18} /> Av. Prof. Fernando Duarte Rabelo, 824<br/>Maria Ortiz · Vitória/ES</li><li><${Ico} name="clock" size=${18} /> Horários: consulte pelo WhatsApp</li></ul></div></div>
+  <p className="cp">© Anderson Car. Prévia de demonstração — layout e textos ilustrativos.</p></div></footer>`; }
+
+function Page(){ return html`<main><${Nav} /><${Hero} /><div className="strip"><${Marquee} items=${['Freios','Suspensão','Injeção eletrônica','Revisão','Elétrica','Ar-condicionado','Troca de óleo']} speed=${22} /></div>
+  <${Servicos} /><${Diag} /><${Why} /><${Proof} /><${Final} /><${Footer} /></main>`; }
+
+LP.mount(Page, { empresa:'Anderson Car', whatsapp:'5527998222980', mensagem:MSG, intro:{ title:'ANDERSON CAR', sub:'Mecânica · Vitória' }, introMs:1800 });
+})();
+</script>
+</body>
+</html>
